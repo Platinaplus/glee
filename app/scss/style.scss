@@ -1,10 +1,171 @@
 @import 'vars';
-@import "fonts";
+@import 'fonts';
+
 @import 'reset';
 @import 'global';
 
 
+.header {
+  padding: 47px 0 42px;
 
+  &__container {
+    max-width: 1782px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  @extend %rubik-500;
+  font-size: 36px;
+
+  &__img {
+    display: inline-block;
+  }
+
+  &__name {
+    line-height: 47px;
+    vertical-align: bottom;
+  }
+}
+
+.menu {
+  &__items {
+    display: flex;
+    align-items: center;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+
+  }
+
+  &__item {
+    &+& {
+      margin-left: 28px;
+    }
+  }
+}
+
+.user-nav {
+  @extend %flex-b;
+
+  &__layout {
+    @extend %flex-c;
+
+    &+& {
+      margin-left: 20px;
+    }
+  }
+
+  &__layout--1,
+  &__layout--3 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $light-grey;
+  }
+
+  &__layout--2 {
+    position: relative;
+    height: 50px;
+    width: 179px;
+    border-radius: 28px;
+    background-color: $beg;
+    @extend %flex-a;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 32px;
+      width: 1px;
+      background-color: #fde7d3;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%)
+    }
+  }
+
+  &__link--love,
+  &__link--cart {
+    position: relative;
+  }
+
+  &__link--love::after {
+    content: "";
+    width: 18px;
+    height: 16px;
+    background-image: url('../images/icons/love.svg');
+    @extend %bg-img;
+    display: block;
+  }
+
+  &__link--cart::after {
+    content: "";
+    width: 18px;
+    height: 16px;
+    background-image: url('../images/icons/cart.svg');
+    @extend %bg-img;
+    display: block;
+  }
+
+  &__num {
+    font-size: 8px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    @extend %flex-c;
+  }
+
+  &__layout--3 {
+    background-color: $blue;
+  }
+
+}
+
+.footer {
+  &__inner {
+    @extend %flex-b;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 32px;
+    color: $text-color;
+    border-top: 1px solid $light-blue;
+    padding: 40px 0;
+  }
+
+  &__items {
+    @extend %flex-b;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item+&__item {
+    margin-left: 30px;
+  }
+
+  &__item:not(:first-child)::before {
+    content: "";
+    display: block;
+    height: 17px;
+    width: 1px;
+    background-color: $text-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+  }
+}
 
 
 

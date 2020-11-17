@@ -1,0 +1,66 @@
+$accent: #436372;
+$beg:#fcd7b6;
+$blue:#a3bbc8;  
+$text-color:#8b8b8b;
+$title-color:#191919;
+$light-grey:#edf1f4;
+$light-blue:#dae4e9;
+
+%flex-c{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-b{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-a{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+%bg-img{
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+%dm-400{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
+
+%dm-500{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+%dm-700{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+%rubik-400{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+%rubik-500{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+%rubik-700{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+
+
+
+                      
