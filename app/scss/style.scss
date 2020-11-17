@@ -24,7 +24,8 @@
   font-size: 36px;
 
   &__img {
-    display: inline-block;
+    display: inline;
+    vertical-align: middle;
   }
 
   &__name {
@@ -132,14 +133,92 @@
 }
 
 .footer {
-  &__inner {
+  @extend %rubik-400;
+  color: $text-color;
+
+  .logo__name {
+    color: $accent;
+  }
+
+  &__top {
+    padding: 90px 0 70px;
     @extend %flex-b;
-    @extend %rubik-400;
+    align-items: baseline;
+  }
+
+  &__top-address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    .footer__top-text {
+      margin-top: 24px;
+    }
+
+    & span {
+      display: block;
+    }
+  }
+
+  &__top-title {
+    @extend %dm-700;
+    color: $dark-blue;
+    text-transform: uppercase;
+  }
+
+  &__top-item {
+    font-size: 14px;
+  }
+
+  &__top-item:not(:first-child) {
+    margin-top: 11px;
+  }
+
+  &__top-item:first-child {
+    margin-top: 16px;
+  }
+
+  &-letter {
+    max-width: 273px;
+  }
+
+  &__top-input {
+    margin-top: 30px;
+    border: none;
+    height: 38px;
+    width: 170px;
+    outline-color: $light;
+
+    &::placeholder {
+      background-color: $light;
+      color: $accent;
+      @extend %dm-400;
+      font-size: 12px;
+      padding-left: 16px;
+      line-height: 38px;
+    }
+  }
+
+  &__top-btn {
+    height: 38px;
+    padding: 0 16px;
+    background-color: $blue;
+    color: #fff;
+    @extend %dm-400;
+    font-size: 14px;
+    line-height: 38px;
+    margin-left: -6px;
+    outline-color: $blue;
+  }
+
+  &__bottom {
+    @extend %flex-b;
+
     font-size: 14px;
     line-height: 32px;
     color: $text-color;
     border-top: 1px solid $light-blue;
-    padding: 40px 0;
+    padding: 31px 0;
   }
 
   &__items {
