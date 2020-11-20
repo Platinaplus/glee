@@ -29,9 +29,24 @@ $dark-blue:#1f2044;
 %bg-img{
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
+%pseudo-icon{
+  content:"";
+  display: block;
+  position: absolute;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
+%positionCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%)
+}
 
 %dm-400{
   font-family: 'DM Sans', sans-serif;

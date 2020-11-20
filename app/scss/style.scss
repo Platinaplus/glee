@@ -3,6 +3,7 @@
 
 @import 'reset';
 @import 'global';
+@import 'libs';
 
 
 .header {
@@ -245,6 +246,349 @@
     left: -15px;
   }
 }
+
+.top-slider {
+  &__container {
+    max-width: 1782px;
+    background-color: $beg;
+    margin: 0 15px;
+  }
+
+  &__inner {
+    position: relative;
+    height: 823px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner::before {
+    content: "";
+    display: block;
+    width: 634px;
+    height: 634px;
+    background-image: url('../images/slider/gradient.png');
+    position: absolute;
+    left: 57%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__item {
+    display: flex !important;
+    position: relative;
+    justify-content: space-around;
+  }
+
+  &__img {
+    z-index: 2;
+    object-fit: contain;
+  }
+
+  &__content {
+    align-self: flex-start;
+    max-width: 29%;
+  }
+
+  &__title {
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 357px;
+    padding: 40px 0 47px;
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $accent;
+  }
+
+  &__btn {
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #fff;
+    background-color: $blue;
+    padding: 24px 18px 24px 25px;
+    outline-color: $blue;
+
+    &::after {
+      content: "";
+      background-image: url('../images/icons/arrow.svg');
+      width: 22px;
+      height: 9px;
+      display: inline-block;
+      margin-left: 60px;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+      padding: 6px;
+
+      button {
+        padding: 0;
+        font-size: 10.88px;
+        line-height: 8.7px;
+        background-color: #fde3ce;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        outline: none;
+      }
+
+      &.slick-active {
+        & button {
+          background-color: #fff;
+        }
+
+      }
+    }
+  }
+}
+
+.support {
+  &__items {
+    background-color: $light;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 55px 150px 55px 225px;
+    margin: 0 15px;
+  }
+
+
+  &__item {
+    max-width: 205px;
+    // margin-left: 24px;
+    position: relative;
+
+    &.item-1::before {
+      width: 51px;
+      height: 53px;
+      left: -75px;
+      top: 50%;
+      transform: translateY(-50%);
+      @extend %pseudo-icon;
+      background-image: url('../images/icons/delivery.svg');
+    }
+
+    &.item-2::before {
+      width: 54px;
+      height: 36px;
+      left: -78px;
+      top: 50%;
+      transform: translateY(-50%);
+      @extend %pseudo-icon;
+      background-image: url('../images/icons/track.svg');
+    }
+
+    &.item-3::before {
+      width: 54px;
+      height: 52px;
+      left: -78px;
+      top: 50%;
+      transform: translateY(-50%);
+      @extend %pseudo-icon;
+      background-image: url('../images/icons/payment.svg');
+    }
+  }
+
+  &__item-title {
+    @extend %dm-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+
+  &__item-text {
+    @extend %dm-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+}
+
+.products {
+  padding-top: 67px;
+  background-color: #fff;
+
+  &__title {
+    @extend %dm-700;
+    font-size: 36px;
+    margin-bottom: 34px;
+    color: #191919;
+  }
+
+  &__menu {
+    @extend %flex-c;
+    @extend %dm-700;
+    font-size: 16px;
+    color: $text-color;
+
+    &-item:hover {
+      color: #191919;
+    }
+
+    &-item+&-item {
+      margin-left: 30px;
+    }
+
+    &-link.here {
+      color: #191919;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-rows: '1fr 1fr';
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 78px;
+    grid-gap: 30px;
+    margin-bottom: 184px;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 0 40px;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    &:hover>.products__icons {
+      opacity: 1;
+    }
+  }
+
+  &__card-img {
+    margin-bottom: 56px;
+  }
+
+  &__icons {
+    @extend %flex-c;
+    @extend %positionCenter;
+    transform: translate(-50%, 30%);
+    opacity: 0;
+    transition: opacity .3s;
+
+    & img {
+      @extend %positionCenter;
+    }
+  }
+
+  &__icon {
+    position: relative;
+
+    &:hover::before {
+      background-color: $light-grey;
+    }
+  }
+
+  &__icon::before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color .3s;
+  }
+
+  &__card-name {
+    @extend %dm-500;
+    color: #243f4d;
+    margin-bottom: 18px;
+  }
+
+  &__card-price {
+    @extend %dm-700;
+    color: $blue;
+  }
+
+  &__specials {
+    .special-container {
+      max-width: 1800px;
+      padding: 0 15px;
+    }
+  }
+
+  &__specials-inner {
+    @extend %flex-b;
+    column-gap: 30px;
+  }
+
+  &__special {
+    position: relative;
+    width: 100%;
+
+    flex-wrap: wrap;
+    height: 387px;
+    background-color: $light;
+
+    & img {
+      position: absolute;
+      bottom: 85px;
+      left: 8%;
+    }
+  }
+
+  &__special-content {
+    @extend %flex-c;
+    flex-direction: column;
+    max-width: 259px;
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 84px;
+    margin-right: 159px;
+    margin-left: auto;
+  }
+
+  &__special-name {
+    @extend %dm-700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #243f4d;
+    margin-bottom: 19px;
+  }
+
+  &__special-text {
+    @extend %dm-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-bottom: 33px;
+  }
+
+  &__special-btn {
+    padding: 20px;
+    background-color: transparent;
+    color: $accent;
+    border: 1px solid $accent;
+    border-radius: 5px;
+
+    &::after {
+      background-image: url('../images/icons/arrow2.svg');
+    }
+  }
+}
+
+
+
 
 
 
