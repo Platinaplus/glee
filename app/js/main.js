@@ -3,7 +3,9 @@ $(function(){
   $('.top-slider__inner').slick({
     dots: true,
     arrows:false,
-    fade: true
+    fade: true,
+    autoplay: true,
+    autoplaySpead: 3000
   })
 
 
