@@ -77,6 +77,19 @@ $dark-blue:#1f2044;
   font-weight: 700;
 }
 
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+%title{
+  @extend %dm-700;
+  font-size: 36px;
+  margin-bottom: 34px;
+  color: #191919;
+}
 
 
 
