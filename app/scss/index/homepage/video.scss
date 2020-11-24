@@ -1,0 +1,19 @@
+.video {
+  &__img {
+    @extend %flex-c;
+    width: 100%;
+    height: 500px;
+    @extend %bg-img;
+  }
+
+  &__play {
+
+    &::after {
+      @extend %pseudo-icon;
+      width: 128px;
+      height: 128px;
+      background-image: url('../images/icons/play.svg');
+      transform: translate(-50%, -50%);
+    }
+  }
+}

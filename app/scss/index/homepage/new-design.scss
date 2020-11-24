@@ -1,0 +1,44 @@
+.new-design {
+  padding: 105px 0 120px;
+
+  &__menu-item:hover,
+  &__menu-item.on {
+    color: #191919;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    height: 526px;
+    width: 100%;
+    margin-top: 77px;
+  }
+
+  &__card {
+    @extend %bg-img;
+    text-align: left;
+    padding: 40px 0 0 35px;
+    height: 248px;
+    border-radius: 5px;
+  }
+
+  &__name {
+    @extend %dm-700;
+    max-width: 165px;
+    font-size: 20px;
+    color: #191919;
+  }
+
+  &__category {
+    @extend %dm-700;
+    font-size: 16px;
+    color: #a3bbc8;
+    margin-top: 19px;
+  }
+}
+
+.new-design__menu-item + .new-design__menu-item {
+  margin-left: 30px;
+}

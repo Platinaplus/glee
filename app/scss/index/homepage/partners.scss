@@ -1,0 +1,10 @@
+.partners {
+  background-color: $light;
+  padding: 264px 0 82px;
+  margin-top: -168px;
+  z-index: -1;
+
+  &__inner {
+    @extend %flex-a;
+  }
+}

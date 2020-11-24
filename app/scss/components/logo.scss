@@ -1,0 +1,14 @@
+.logo {
+  @extend %rubik-500;
+  font-size: 36px;
+
+  &__img {
+    display: inline;
+    vertical-align: middle;
+  }
+
+  &__name {
+    line-height: 47px;
+    vertical-align: bottom;
+  }
+}

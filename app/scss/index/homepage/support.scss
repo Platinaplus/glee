@@ -1,0 +1,69 @@
+.support {
+  &__items {
+    background-color: $light;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 150px 35px 225px;
+  }
+
+
+  &__item {
+    max-width: 205px;
+    text-align: left;
+    position: relative;
+
+    &:not(:last-child):after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 170px;
+      background-color: #e8e4df;
+      top: -36px;
+      left: 353px;
+    }
+
+    &.item--1::before {
+      width: 51px;
+      height: 53px;
+      left: -75px;
+      top: 50%;
+      transform: translateY(-50%);
+      @extend %pseudo-icon;
+      background-image: url('../images/icons/delivery.svg');
+    }
+
+    &.item--2::before {
+      width: 54px;
+      height: 36px;
+      left: -78px;
+      top: 50%;
+      transform: translateY(-50%);
+      @extend %pseudo-icon;
+      background-image: url('../images/icons/track.svg');
+    }
+
+    &.item--3::before {
+      width: 54px;
+      height: 52px;
+      left: -78px;
+      top: 50%;
+      transform: translateY(-50%);
+      @extend %pseudo-icon;
+      background-image: url('../images/icons/payment.svg');
+    }
+  }
+
+  &__title {
+    @extend %dm-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+
+  &__text {
+    @extend %dm-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+}

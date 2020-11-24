@@ -1,0 +1,30 @@
+.btn {
+  @extend %rubik-500;
+  font-size: 15px;
+  line-height: 12px;
+  color: #fff;
+  background-color: $blue;
+  padding: 24px 18px 24px 25px;
+  outline-color: $blue;
+
+  &::after {
+    content: "";
+    background-image: url('../images/icons/arrow.svg');
+    width: 22px;
+    height: 9px;
+    display: inline-block;
+    margin-left: 60px;
+  }
+}
+
+.btn--special {
+  padding: 20px;
+  background-color: transparent;
+  color: $accent;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+
+  &::after {
+    background-image: url('../images/icons/arrow2.svg');
+  }
+}

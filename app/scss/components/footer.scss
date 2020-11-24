@@ -1,0 +1,107 @@
+.footer {
+  @extend %rubik-400;
+  color: $text-color;
+
+  &__top {
+    padding: 90px 0 70px;
+    @extend %flex-b;
+    align-items: baseline;
+    text-align: left;
+  }
+
+  &__top-block {
+    max-width: 200px;
+  }
+
+  &__top-address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    & span {
+      display: block;
+    }
+  }
+
+  &__top-text {
+    margin-top: 24px;
+  }
+
+  &__top-title {
+    @extend %dm-700;
+    color: $dark-blue;
+    text-transform: uppercase;
+  }
+
+  &__top-item {
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  &--letter {
+    max-width: 273px;
+  }
+
+  &__top-input {
+    margin-top: 30px;
+    border: none;
+    height: 38px;
+    width: 170px;
+    outline-color: $light;
+
+    &::placeholder {
+      background-color: $light;
+      color: $accent;
+      @extend %dm-400;
+      font-size: 12px;
+      padding-left: 16px;
+      line-height: 38px;
+    }
+  }
+
+  &__top-btn {
+    height: 38px;
+    padding: 0 16px;
+    background-color: $blue;
+    color: #fff;
+    @extend %dm-400;
+    font-size: 14px;
+    line-height: 38px;
+    margin-left: -6px;
+    outline-color: $blue;
+  }
+
+  &__bottom {
+    @extend %flex-b;
+
+    font-size: 14px;
+    line-height: 32px;
+    color: $text-color;
+    border-top: 1px solid $light-blue;
+    padding: 31px 0;
+  }
+
+  &__items {
+    @extend %flex-b;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item+&__item {
+    margin-left: 30px;
+  }
+
+  &__item:not(:first-child)::before {
+    content: "";
+    display: block;
+    height: 17px;
+    width: 1px;
+    background-color: $text-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+  }
+}
