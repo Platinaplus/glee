@@ -15,16 +15,17 @@
     display: inline-block;
     margin-left: 60px;
   }
-}
 
-.btn--special {
-  padding: 20px;
-  background-color: transparent;
-  color: $accent;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-
-  &::after {
-    background-image: url('../images/icons/arrow2.svg');
+  &--transparent {
+    padding: 20px;
+    background-color: transparent;
+    color: $accent;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  
+    &::after {
+      background-image: url('../images/icons/arrow2.svg');
+    }
   }
 }
+

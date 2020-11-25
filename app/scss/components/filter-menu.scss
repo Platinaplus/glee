@@ -1,0 +1,25 @@
+.filter-menu {
+
+  @extend %flex-c;
+  @extend %dm-700;
+
+  & button {
+    font-size: 16px;
+    color: $text-color;
+    outline-color: $text-color;
+
+    &:hover {
+      color: #191919;
+    }
+  }
+
+  &__item {
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+
+    &.on {
+      color: #191919;
+    }
+  }
+}

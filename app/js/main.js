@@ -13,11 +13,11 @@ $(function () {
 
   var mix1 = mixitup(".new-design__cards", {
     selectors: {
-      control: ".new-design__menu-item",
+      control: ".new-design__control",
     },
     callbacks: {
       onMixStart: function (state, futureState) {
-        $(".new-design__menu-item").removeClass("on");
+        $(".new-design__control").removeClass("on");
         $(event.target).addClass("on");
       },
     },
@@ -25,11 +25,11 @@ $(function () {
 
   var mix2 = mixitup(".products__cards", {
     selectors: {
-      control: ".products__menu-item",
+      control: ".products__control",
     },
     callbacks: {
       onMixStart: function (state, futureState) {
-        $(".products__menu-item").removeClass("on");
+        $(".products__control").removeClass("on");
         $(event.target).addClass("on");
       },
     },

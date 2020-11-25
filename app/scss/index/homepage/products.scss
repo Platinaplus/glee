@@ -6,29 +6,7 @@
     @extend %title;
   }
 
-  &__menu {
 
-    @extend %flex-c;
-    @extend %dm-700;
-
-    & button {
-      font-size: 16px;
-      color: $text-color;
-      outline-color: #fff;
-
-      &:hover {
-        color: #191919;
-      }
-    }
-  }
-
-  &__menu-item + .products__menu-item {
-    margin-left: 30px;
-  }
-
-  &__menu-item.on {
-    color: #191919;
-  }
 
 
   &__cards {

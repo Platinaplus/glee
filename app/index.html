@@ -27,8 +27,8 @@
           </ul>
         </nav>
         <div class="user-nav">
-          <div class="user-nav__layout user-nav__layout--1">
-            <a href="#" class="user-nav__link">
+
+            <a class="user-nav__layout user-nav__layout--1" href="#" class="user-nav__link">
 
               <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
                 <path fill="#243f4d" id="icon" class="cls-1"
@@ -37,7 +37,7 @@
               </svg>
 
             </a>
-          </div>
+
           <div class="user-nav__layout user-nav__layout--2">
             <a href="#" class="user-nav__link--love">
               <div class="user-nav__num">0</div>
@@ -46,8 +46,8 @@
               <div class="user-nav__num">0</div>
             </a>
           </div>
-          <div class="user-nav__layout user-nav__layout--3">
-            <a href="#" class="user-nav__link">
+
+            <a class="user-nav__layout user-nav__layout--3" href="#" class="user-nav__link">
 
               <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20.031" viewBox="0 0 20.03 20.031">
                 <path fill="#fff" class="cls-1"
@@ -56,7 +56,7 @@
               </svg>
 
             </a>
-          </div>
+
         </div>
       </div>
     </div>
@@ -67,9 +67,9 @@
         <div class="top-slider__inner">
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <h3 class="top-slider__title">
+              <div class="top-slider__title">
                 smart and trendy
-              </h3>
+              </div>
               <p class="top-slider__text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet fugit magnam quia!
               </p>
@@ -106,20 +106,20 @@
         </div>
         <div class="support">
           <div class="support__items">
-            <div class="support__item item--1">
+            <div class="support__item item--support">
               <div class="support__title">Support 24/7.</div>
               <div class="support__text">
                 Contact us 24 hours a day,
                 7 days a week.
               </div>
             </div>
-            <div class="support__item item--2">
+            <div class="support__item item--delivery">
               <div class="support__title">Delivery.</div>
               <div class="support__text">
                 Free shipping on all US order.
               </div>
             </div>
-            <div class="support__item item--3">
+            <div class="support__item item--pay">
               <div class="support__title">100% Payment secure.</div>
               <div class="support__text">
                 We ensure secure payment with PEV
@@ -133,12 +133,12 @@
     <section class="products">
       <div class="container-small">
         <h5 class="products__title" id="products">Products of the week</h5>
-        <div class="products__menu">
-          <button class="products__menu-item on" type="button" data-filter="all">All</button>
-          <button class="products__menu-item" type="button" data-filter=".category-furniture">Furnitures</button>
-          <button class="products__menu-item" type="button" data-filter=".category-chair">Chairs</button>
-          <button class="products__menu-item" type="button" data-filter=".category-light">Lighting</button>
-          <button class="products__menu-item" type="button" data-filter=".category-decor">Decor</button>
+        <div class="filter-menu">
+          <button class="products__control filter-menu__item on" type="button" data-filter="all">All</button>
+          <button class="products__control filter-menu__item" type="button" data-filter=".category-furniture">Furnitures</button>
+          <button class="products__control filter-menu__item" type="button" data-filter=".category-chair">Chairs</button>
+          <button class="products__control filter-menu__item" type="button" data-filter=".category-light">Lighting</button>
+          <button class="products__control filter-menu__item" type="button" data-filter=".category-decor">Decor</button>
         </div>
         <div class="products__cards">
           <div class="mix category-furniture products__card">
@@ -376,7 +376,7 @@
               <div class="products__special-content">
                 <span class="products__special-name">Mirum Notare Tellus</span>
                 <span class="products__special-text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</span>
-                <a class="btn btn--special">View More</a>
+                <a class="btn btn--transparent">View More</a>
               </div>
             </div>
             <div class="products__special" href="#">
@@ -385,7 +385,7 @@
                 <span class="products__special-name">Malesuada Tempor Euismod</span>
                 <span class="products__special-text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
                 </span>
-                <a class="btn btn--special" href="#">View More</a>
+                <a class="btn btn--transparent" href="#">View More</a>
               </div>
             </div>
           </div>
@@ -395,13 +395,13 @@
 
     <section class="new-design">
       <div class="container-small">
-        <h5 class="products__title">New Design</h5>
-        <div class="products__menu">
-          <button class="new-design__menu-item on" type="button" data-filter="all">All</button>
-          <button class="new-design__menu-item" type="button" data-filter=".category-a">Furnitures</button>
-          <button class="new-design__menu-item" type="button" data-filter=".category-b">Chairs</button>
-          <button class="new-design__menu-item" type="button" data-filter=".category-c">Lighting</button>
-          <button class="new-design__menu-item" type="button" data-filter=".category-d">Decor</button>
+        <h5 class="new-design__title">New Design</h5>
+        <div class="filter-menu">
+          <button class="new-design__control filter-menu__item on" type="button" data-filter="all">All</button>
+          <button class="new-design__control filter-menu__item" type="button" data-filter=".category-a">Furnitures</button>
+          <button class="new-design__control filter-menu__item" type="button" data-filter=".category-b">Chairs</button>
+          <button class="new-design__control filter-menu__item" type="button" data-filter=".category-c">Lighting</button>
+          <button class="new-design__control filter-menu__item" type="button" data-filter=".category-d">Decor</button>
         </div>
         <div class="new-design__cards">
           <a class="mix category-a new-design__card-link" href="#">
@@ -457,41 +457,41 @@
           <a href="#" class="blog__link">View All</a>
         </div>
         <div class="blog__items">
-          <div class="blog__item">
-            <img class="blog__img" src="images/blog1.jpg" alt="interior">
-            <div class="blog__bottom">
-              <a href="#" class="blog__img-link"></a>
-              <div class="blog__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          <article class="article">
+            <img class="article__img" src="images/blog1.jpg" alt="interior">
+            <div class="article__bottom">
+              <a href="#" class="article__img-link"></a>
+              <div class="article__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam</div>
-              <ul class="blog__data">
-                <li class="blog__date"><time>28 january, 2020</time></li>
-                <li class="blog__autor">by admin</li>
-              </ul>
-            </div>
-          </div>
-          <div class="blog__item">
-            <img class="blog__img" src="images/blog2.jpg" alt="interior">
-            <div class="blog__bottom">
-              <a href="#" class="blog__img-link"></a>
-              <div class="blog__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              <div class="article__data">
+                <div class="article__date"><time>28 january, 2020</time></div>
+                <div class="article__author">by admin</div>
               </div>
-              <ul class="blog__data">
-                <li class="blog__date"><time>28 january, 2020</time></li>
-                <li class="blog__autor">by admin</li>
-              </ul>
             </div>
-          </div>
-          <div class="blog__item">
-            <img class="blog__img" src="images/blog3.jpg" alt="interior">
-            <div class="blog__bottom">
-              <a href="#" class="blog__img-link"></a>
-              <div class="blog__text">Rncididunt ut labore et dolore magna aliqua. Ut enim</div>
-              <ul class="blog__data">
-                <li class="blog__date"><time>28 january, 2020</time></li>
-                <li class="blog__autor">by admin</li>
-              </ul>
+          </article>
+          <article class="article">
+            <img class="article__img" src="images/blog2.jpg" alt="interior">
+            <div class="article__bottom">
+              <a href="#" class="article__img-link"></a>
+              <div class="article__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              </div>
+              <div class="article__data">
+                <div class="article__date"><time>28 january, 2020</time></div>
+                <div class="article__author">by admin</div>
+              </div>
             </div>
-          </div>
+          </article>
+          <article class="article">
+            <img class="article__img" src="images/blog3.jpg" alt="interior">
+            <div class="article__bottom">
+              <a href="#" class="article__img-link"></a>
+              <div class="article__text">Rncididunt ut labore et dolore magna aliqua. Ut enim</div>
+              <div class="article__data">
+                <div class="article__date"><time>28 january, 2020</time></div>
+                <div class="article__author">by admin</div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -522,10 +522,10 @@
           </a>
           <address class="footer__top-address">
             <p class="footer__top-text">ADDRESS: 4772 Wines Lane <span>Houston, TX 77032</span></p>
-            <p class="footer__top-text"><a class="footer__top-address-link" href="tel:+8323475843">TELEPHONE:
-                +832-347-5843</a></p>
-            <p class="footer__top-text"><a class="footer__top-address-link" href="mailto:contact@Glee.com">EMAIL:
-                contact@Glee.com</a></p>
+            <a class="footer__address-link" href="tel:+8323475843">TELEPHONE:
+                +832-347-5843</a>
+            <a class="footer__address-link" href="mailto:contact@Glee.com">EMAIL:
+                contact@Glee.com</a>
           </address>
         </div>
         <div class="footer__top-block">
@@ -547,15 +547,15 @@
             <li class="footer__top-item"><a href="#" class="footer__top-link">Register</a></li>
           </ul>
         </div>
-        <div class="footer__top-block footer--letter">
+        <div class="footer__top-block  footer__top-block--letter">
           <div class="footer__top-title">newsletter</div>
           <ul class="footer__top-list">
             <li class="footer__top-item"><a href="#" class="footer__top-link">Subscribe by newsletter and get update
                 prosition</a></li>
           </ul>
           <form class="footer__form">
-            <input class="footer__top-input" type="email" name="email" placeholder="Email address" required>
-            <button class="footer__top-btn" type="submit">Subscribe</button>
+            <input class="footer__input" type="email" name="email" placeholder="Email address" required>
+            <button class="footer__btn" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
