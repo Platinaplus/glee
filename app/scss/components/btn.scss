@@ -27,5 +27,12 @@
       background-image: url('../images/icons/arrow2.svg');
     }
   }
+  &--radius{
+    border-radius: 5px;
+    padding: 18px 25px 18px 18px;
+    &::after{
+      margin-left: 18px;
+    }
+  }
 }
 

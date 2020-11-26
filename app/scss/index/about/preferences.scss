@@ -1,0 +1,55 @@
+.preferences {
+  background-color: #fcd7b6;
+  padding: 74px 0;
+
+  &__items {
+    @extend %flex-b;
+    @extend %dm-700;
+    padding: 0 40px;
+    color: #243f4d;
+  }
+
+  &__item {
+    @extend %flex-c;
+    flex-direction: column;
+    padding-top: 87px;
+    position: relative;
+
+    &::before {
+      @extend %pseudo-icon;
+      width: 70px;
+      height: 78px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:nth-child(1)::before {
+      background-image: url('../../../images/icons/preferences/1.svg');
+    }
+
+    &:nth-child(2)::before {
+      background-image: url('../../../images/icons/preferences/2.svg');
+    }
+
+    &:nth-child(3)::before {
+      background-image: url('../../../images/icons/preferences/3.svg');
+    }
+
+    &:nth-child(4)::before {
+      background-image: url('../../../images/icons/preferences/4.svg');
+    }
+  }
+
+  &__num {
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}

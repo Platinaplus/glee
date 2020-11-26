@@ -1,0 +1,109 @@
+.about {
+
+  &__content {
+    padding-top: 120px;
+    @extend %flex-b;
+    column-gap: 45px;
+    color: #243f4d;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__numbers {
+    padding-left: 181px;
+    position: relative;
+    margin-bottom: 50px;
+
+    &::before {
+      content: "12";
+      @extend %rubik-700;
+      font-size: 140px;
+      color: #a3bbc8;
+      position: absolute;
+      left: 0;
+      top: 20px;
+    }
+  }
+
+  &__theme {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &__mission-title {
+    font-size: 36px;
+    @extend %dm-700;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 58px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 500px;
+      height: 1px;
+      background-color: #e6eaf0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__items {
+    padding-top: 42px;
+    @extend %flex-b;
+    @extend %dm-700;
+  }
+
+  &__num {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+
+  &__num-text {
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+  }
+
+  &__item {
+    padding-left: 53px;
+    position: relative;
+
+    &::before {
+      @extend %pseudo-icon;
+
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:first-child::before {
+      width: 36px;
+      height: 38px;
+      background-image: url('../../../images/icons/pen.svg');
+    }
+
+    &:nth-child(2)::before {
+      width: 44px;
+      height: 40px;
+      background-image: url('../../../images/icons/sound.svg');
+    }
+
+    &:last-child::before {
+      width: 40px;
+      height: 40px;
+      background-image: url('../../../images/icons/medal.svg');
+    }
+  }
+}
