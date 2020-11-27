@@ -1,0 +1,30 @@
+.form{
+  &__inner{
+    max-width:470px ;
+    margin: 0 auto;
+  }
+  &__label{
+    display: block;
+    margin-bottom: 19px;
+    &:nth-child(2){
+      margin-bottom: 37px;
+    }
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #f6f6f6;
+    padding: 0 15px;
+    height: 50px;
+    margin-top: 9px;
+  }
+  &__bottom{
+    @extend %flex-b;
+    height: 78px;
+    border-bottom:1px solid #f6f6f6;
+    .form__label{
+      margin-bottom: 0;
+    }
+  }
+}

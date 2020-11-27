@@ -10,6 +10,8 @@
 @import 'components/btn';
 @import 'components/filter-menu';
 @import 'components/article';
+@import 'components/title.scss';
+@import 'components/form.scss';
 
 @import 'index/homepage/top-slider.scss';
 @import 'index/homepage/support.scss';
@@ -19,10 +21,12 @@
 @import 'index/homepage/blog.scss';
 @import 'index/homepage/partners.scss';
 
-@import 'index/about/title.scss';
 @import 'index/about/mission.scss';
 @import 'index/about/preferences.scss';
 @import 'index/about/team.scss';
+@import 'index/login/login.scss';
+@import 'index/terms&conditions/terms.scss';
+
 
 
 

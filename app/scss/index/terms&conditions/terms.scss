@@ -1,0 +1,44 @@
+.terms{
+  color: $accent;
+  padding: 108px 0 51px;
+  &__title{
+    @extend %rubik-500;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 23px;
+  }
+  &__title--main{
+    margin-bottom: 30px;
+  }
+
+  &__list{
+    list-style-type: none;
+    counter-reset: num;
+  }
+
+  &__item{
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 26px;
+    &::before{
+      content: '0' counter(num) '. ';
+      counter-increment: num;
+      margin-right: 9px;
+    }
+  }
+
+  &__wrapper{
+    margin-bottom: 68px;
+  }
+
+  &__item--text{
+    margin-bottom: 68px;
+    &::before{
+      display: none;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

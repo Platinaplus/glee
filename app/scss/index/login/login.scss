@@ -1,0 +1,22 @@
+.login{
+  padding: 113px 0 118px;
+  @extend %rubik-400;
+  color: $accent;
+  font-size: 14px;
+  &__text{
+    display: block;
+    text-align: center;
+    margin-top: 26px;
+  }
+  .btn--transparent{
+    font-size: 18px;
+    width: 100%;
+    margin: 0 auto;
+    border-color: $accent;
+    border-radius: 0;
+    margin-top: 20px;
+    &::after{
+      display: none;
+    }
+  }
+  }

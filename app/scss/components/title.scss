@@ -1,6 +1,8 @@
 .about {
   padding-bottom: 120px;
+}
 
+.title {
   &__title {
     background-color: #edf1f4;
     padding: 32px 0;
@@ -15,11 +17,26 @@
     line-height: 24px;
     margin-bottom: 12px;
   }
+}
 
+.breadcrumbs {
   &__link {
     @extend %rubik-400;
     font-size: 14px;
     line-height: 24px;
     color: #222933;
+    &::after {
+      content: "/";
+      display: inline-block;
+      margin: 0 7px;
+    }
+
+    &:last-child {
+      color: #191919;
+      &::after{
+        display: none;
+      }
+
+    }
   }
 }
