@@ -1,8 +1,9 @@
 html,
-body{
+body {
   height: 100%;
 }
-body{
+
+body {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   line-height: 30px;
@@ -11,23 +12,24 @@ body{
   display: flex;
   flex-direction: column;
 }
-.main{
+
+.main {
   flex-grow: 1;
 }
-.container{
+
+.container {
   max-width: 1800px;
   padding: 0 15px;
   margin: 0 auto;
 }
-.container-small{
+
+.container-small {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
-.partners.partners--down{
+
+.partners.partners--down {
   padding: 82px 0;
   margin-top: 0;
 }
-
-
-

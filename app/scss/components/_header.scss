@@ -22,13 +22,11 @@
 
   }
 
-  &__item {
-    & + .menu__item {
-      margin-left: 28px;
+  &__item:not(:last-child) {
+      margin-right: 28px;
     }
   }
   
-}
 
 .user-nav {
   @extend %flex-b;
@@ -74,7 +72,8 @@
   &__link--love,
   &__link--cart {
     position: relative;
-    padding: 15px 20px;
+    width: 89px;
+    height: 50px;
   }
 
   &__link--love::after {
@@ -84,6 +83,7 @@
     background-image: url('../images/icons/love.svg');
     @extend %bg-img;
     display: block;
+    @extend %positionCenter;
   }
 
   &__link--cart::after {
@@ -93,6 +93,7 @@
     background-image: url('../images/icons/cart.svg');
     @extend %bg-img;
     display: block;
+    @extend %positionCenter;
   }
 
   &__link {
@@ -108,9 +109,10 @@
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
-    top: 5px;
-    right: 12px;
+    top: 10px;
+    right: 26px;
     @extend %flex-c;
+    z-index: 1;
   }
 
   &__layout--3 {

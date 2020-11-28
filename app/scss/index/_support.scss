@@ -22,7 +22,7 @@
       left: 353px;
     }
 
-    &.item--support::before {
+    &--support::before {
       width: 51px;
       height: 53px;
       left: -75px;
@@ -32,7 +32,7 @@
       background-image: url('../images/icons/delivery.svg');
     }
 
-    &.item--delivery::before {
+    &--delivery::before {
       width: 54px;
       height: 36px;
       left: -78px;
@@ -42,7 +42,7 @@
       background-image: url('../images/icons/track.svg');
     }
 
-    &.item--pay::before {
+    &--pay::before {
       width: 54px;
       height: 52px;
       left: -78px;

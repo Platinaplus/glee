@@ -1,8 +1,10 @@
 .article{
+
+  
   &__item {
     text-align: left;
   }
-
+  
   &__img {
     height: 251px;
     width: 100%;
@@ -50,6 +52,7 @@
     color: #262626;
     margin-bottom: 17px;
     text-align: left;
+    overflow-y: hidden;
   }
 
   &__data {

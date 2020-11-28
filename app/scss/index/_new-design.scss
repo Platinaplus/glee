@@ -41,8 +41,7 @@
     color: #a3bbc8;
     margin-top: 19px;
   }
-}
-
-.new-design__menu-item + .new-design__menu-item {
-  margin-left: 30px;
+  &__menu-item:not(:last-child){
+    margin-right: 30px;
+  }
 }

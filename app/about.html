@@ -18,7 +18,7 @@
         </a>
         <nav class="menu">
           <ul class="menu__items">
-            <li class="menu__item"><a href="#" class="menu__link">Home +</a></li>
+            <li class="menu__item"><a href="index.html" class="menu__link">Home +</a></li>
             <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Pages +</a></li>
@@ -66,7 +66,7 @@
 
     <section class="about">
 
-      <div class="title__title">
+      <div class="title">
         <div class="title__name">About Us</div>
         <div class="breadcrumbs">
           <a href="index.html" class="breadcrumbs__link">Home</a>
@@ -152,8 +152,8 @@
                   <div class="team__position">Commodo tempor</div>
                 </div>
                 <div class="team__links">
-                  <a href="#" class="team__link"></a>
-                  <a href="#" class="team__link"></a>
+                  <a href="#" class="team__link" style="background-image:url('images/icons/insta.svg')"></a>
+                  <a href="#" class="team__link" style="background-image:url('images/icons/g.svg')"></a>
                 </div>
               </div>
             </div>
@@ -165,8 +165,8 @@
                   <div class="team__position">Commodo tempor</div>
                 </div>
                 <div class="team__links">
-                  <a href="#" class="team__link"></a>
-                  <a href="#" class="team__link"></a>
+                  <a href="#" class="team__link" style="background-image:url('images/icons/insta.svg')"></a>
+                  <a href="#" class="team__link" style="background-image:url('images/icons/g.svg')"></a>
                 </div>
               </div>
             </div>
@@ -178,8 +178,8 @@
                   <div class="team__position">Commodo tempor</div>
                 </div>
                 <div class="team__links">
-                  <a href="#" class="team__link"></a>
-                  <a href="#" class="team__link"></a>
+                  <a href="#" class="team__link" style="background-image:url('images/icons/insta.svg')"></a>
+                  <a href="#" class="team__link" style="background-image:url('images/icons/g.svg')"></a>
                 </div>
               </div>
             </div>
@@ -191,8 +191,8 @@
                   <div class="team__position">Commodo tempor</div>
                 </div>
                 <div class="team__links">
-                  <a href="#" class="team__link"></a>
-                  <a href="#" class="team__link"></a>
+                  <a href="#" class="team__link" style="background-image:url('images/icons/insta.svg')"></a>
+                  <a href="#" class="team__link" style="background-image:url('images/icons/g.svg')"></a>
                 </div>
               </div>
             </div>
@@ -209,7 +209,7 @@
         </div>
         <div class="blog__items">
           <article class="article">
-            <img class="article__img" src="images/blog1.jpg" alt="interior">
+            <a class="article-link" href="#"><img class="article__img" src="images/blog1.jpg" alt="interior"></a>
             <div class="article__bottom">
               <a href="#" class="article__img-link"></a>
               <div class="article__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -221,7 +221,7 @@
             </div>
           </article>
           <article class="article">
-            <img class="article__img" src="images/blog2.jpg" alt="interior">
+            <a class="article-link" href="#"><img class="article__img" src="images/blog2.jpg" alt="interior"></a>
             <div class="article__bottom">
               <a href="#" class="article__img-link"></a>
               <div class="article__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -234,7 +234,7 @@
             </div>
           </article>
           <article class="article">
-            <img class="article__img" src="images/blog3.jpg" alt="interior">
+            <a class="article-link" href="#"><img class="article__img" src="images/blog3.jpg" alt="interior"></a>
             <div class="article__bottom">
               <a href="#" class="article__img-link"></a>
               <div class="article__text">Rncididunt ut labore et dolore magna aliqua. Ut enim</div>
@@ -273,7 +273,7 @@
             <img class="logo__img" src="images/logotip.png" alt="logo">
           </a>
           <address class="footer__top-address">
-            <p class="footer__top-text">ADDRESS: 4772 Wines Lane <span>Houston, TX 77032</span></p>
+            <p class="footer__top-text">ADDRESS: 4772 Wines Lane Houston, TX 77032</p>
             <a class="footer__address-link" href="tel:+8323475843">TELEPHONE:
               +832-347-5843</a>
             <a class="footer__address-link" href="mailto:contact@Glee.com">EMAIL:
@@ -295,18 +295,18 @@
           <ul class="footer__top-list">
             <li class="footer__top-item"><a href="#" class="footer__top-link">Your Account</a></li>
             <li class="footer__top-item"><a href="#" class="footer__top-link">Checkout</a></li>
-            <li class="footer__top-item"><a href="#" class="footer__top-link">Login</a></li>
+            <li class="footer__top-item"><a href="login.html" class="footer__top-link">Login</a></li>
             <li class="footer__top-item"><a href="#" class="footer__top-link">Register</a></li>
           </ul>
         </div>
         <div class="footer__top-block  footer__top-block--letter">
           <div class="footer__top-title">newsletter</div>
-          <ul class="footer__top-list">
-            <li class="footer__top-item"><a href="#" class="footer__top-link">Subscribe by newsletter and get update
-                prosition</a></li>
-          </ul>
+          <div class="footer__top-list">
+            <label for="subs" href="#" class="footer__top-item footer__top-link">Subscribe by newsletter and get update
+                prosition</label>
+            </div>
           <form class="footer__form">
-            <input class="footer__input" type="email" name="email" placeholder="Email address" required>
+            <input class="footer__input" id="subs" type="email" name="email" placeholder="Email address" required>
             <button class="footer__btn" type="submit">Subscribe</button>
           </form>
         </div>
@@ -323,7 +323,7 @@
         </ul>
       </div>
     </div>
-    </div>
+
 
     <!-- <script src="js/main.min.js"></script> -->
 </body>

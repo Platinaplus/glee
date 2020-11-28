@@ -12,20 +12,23 @@
 @import 'components/article';
 @import 'components/title.scss';
 @import 'components/form.scss';
+@import 'components/partners.scss';
 
-@import 'index/homepage/top-slider.scss';
-@import 'index/homepage/support.scss';
-@import 'index/homepage/products.scss';
-@import 'index/homepage/new-design.scss';
-@import 'index/homepage/video.scss';
-@import 'index/homepage/blog.scss';
-@import 'index/homepage/partners.scss';
+@import 'index/top-slider.scss';
+@import 'index/support.scss';
+@import 'index/products.scss';
+@import 'index/new-design.scss';
+@import 'index/video.scss';
+@import 'index/blog.scss';
 
-@import 'index/about/mission.scss';
-@import 'index/about/preferences.scss';
-@import 'index/about/team.scss';
-@import 'index/login/login.scss';
-@import 'index/terms&conditions/terms.scss';
+
+@import 'about/about.scss';
+@import 'about/preferences.scss';
+@import 'about/team.scss';
+
+@import 'login/login.scss';
+
+@import 'terms&conditions/terms.scss';
 
 
 

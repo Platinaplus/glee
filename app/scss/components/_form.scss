@@ -2,6 +2,10 @@
   &__inner{
     max-width:470px ;
     margin: 0 auto;
+    a{
+      display: block;
+      text-align: center;
+    }
   }
   &__label{
     display: block;

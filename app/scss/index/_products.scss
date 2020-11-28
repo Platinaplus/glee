@@ -6,12 +6,9 @@
     @extend %title;
   }
 
-
-
-
   &__cards {
     display: grid;
-    grid-template-rows: '1fr 1fr';
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 78px;
     grid-gap: 30px;
@@ -103,16 +100,15 @@
   &__special {
     position: relative;
     width: 100%;
-
     flex-wrap: wrap;
     height: 387px;
     background-color: $light;
+  }
 
-    & img {
-      position: absolute;
-      bottom: 85px;
-      left: 10%;
-    }
+  &__special-img{
+    position: absolute;
+    bottom: 85px;
+    left: 10%;
   }
 
   &__special-content {

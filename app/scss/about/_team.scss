@@ -78,23 +78,7 @@
     background-color: #f6f6f6;
     position: relative;
     margin: 4px;
-
-    &::after {
-      @extend %pseudo-icon;
-      position: absolute;
-      @extend %positionCenter;
-    }
-
-    &:first-child::after {
-      background-image: url('../../../images/icons/insta.svg');
-      width: 17px;
-      height: 17px;
-    }
-
-    &:last-child::after {
-      background-image: url('../../../images/icons/g.svg');
-      width: 23px;
-      height: 14px;
-    }
+    @extend %bg-img;
+    background-size: auto;
   }
 }

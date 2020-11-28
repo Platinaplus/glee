@@ -17,10 +17,6 @@
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
-
-    & span {
-      display: block;
-    }
   }
 
   &__top-text,
@@ -56,8 +52,8 @@
       color: $accent;
       @extend %dm-400;
       font-size: 12px;
-      padding-left: 16px;
       line-height: 38px;
+      padding-left: 16px;
     }
   }
 
