@@ -1,20 +1,24 @@
-.form{
-  &__inner{
-    max-width:470px ;
+.form {
+  &__inner {
+    max-width: 470px;
     margin: 0 auto;
-    a{
+
+    a {
       display: block;
       text-align: center;
     }
   }
-  &__label{
-    display: block;
+
+  &__label {
     margin-bottom: 19px;
-    &:nth-child(2){
+    cursor: pointer;
+
+    &:nth-child(2) {
       margin-bottom: 37px;
     }
   }
-  &__input{
+
+  &__input {
     display: block;
     width: 100%;
     background-color: #fff;
@@ -23,12 +27,43 @@
     height: 50px;
     margin-top: 9px;
   }
-  &__bottom{
+
+  &__bottom {
     @extend %flex-b;
     height: 78px;
-    border-bottom:1px solid #f6f6f6;
-    .form__label{
+    border-bottom: 1px solid #f6f6f6;
+
+    .form__label {
       margin-bottom: 0;
     }
+  }
+
+  &__remember {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+
+    &:checked+.form__checkbox {
+      background-color: #ebebeb;
+      border: none;
+
+      &::after {
+        content: "\2714";
+        position: absolute;
+        top: -8px;
+        left: 2px;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: inline-block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ebebeb;
+    margin-right: 13px;
   }
 }

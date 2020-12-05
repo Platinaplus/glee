@@ -2,6 +2,22 @@
   padding-top: 67px;
   background-color: #fff;
 
+  &__list-inner{
+    text-align: center;
+  }
+
+  &__stars {
+    display: none;
+  }
+
+  &__buttons {
+    display: none;
+  }
+
+  &__descr {
+    display: none;
+  }
+
   &__title {
     @extend %title;
   }
@@ -13,6 +29,12 @@
     margin-top: 78px;
     grid-gap: 30px;
     margin-bottom: 184px;
+  }
+  &__card-img{
+    object-fit: contain;
+    width: 270px;
+    height: 200px;
+    padding: 0 20px;
   }
 
   &__card {
@@ -29,6 +51,91 @@
 
     &:hover>.products__icons {
       opacity: 1;
+    }
+
+    &.products__card--list {
+      flex-direction: row;
+      box-shadow: none;
+      margin-bottom: 80px;
+      padding-bottom: 64px;
+
+      .products__stars {
+        display: block;
+      }
+    
+      .products__buttons {
+        display: block;
+      }
+    
+      .products__descr {
+        display: block;
+      }
+
+      .products__icons {
+        display: none;
+      }
+
+      .products__list-inner {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: space-between;
+      }
+
+      .products__card-img {
+        margin-right: 85px;
+        margin-bottom: 0;
+        width: 370px;
+        height: 360px;
+      }
+
+      .products__card-name {
+        margin-bottom: 27px;
+        font-size: 40px;
+      }
+
+      .products__stars {
+        margin-bottom: 35px;
+      }
+
+      .products__card-price {
+        margin-bottom: 25px;
+        font-size: 30px;
+      }
+
+      .products__descr {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 418px;
+        overflow: hidden;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__button {
+    width: 53px;
+    height: 53px;
+    background-color: #fff;
+    transition: background-color .3s;
+    margin-right: 7px;
+    outline: #a3bbc8;
+
+    &:hover {
+      background-color: #a3bbc8;
+
+      & path {
+        fill: #FFF;
+      }
+    }
+
+    &.products__button--active {
+      background-color: #a3bbc8;
+
+      & path {
+        fill: #FFF;
+      }
     }
   }
 
@@ -105,7 +212,7 @@
     background-color: $light;
   }
 
-  &__special-img{
+  &__special-img {
     position: absolute;
     bottom: 85px;
     left: 10%;

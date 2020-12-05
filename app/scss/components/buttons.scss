@@ -1,0 +1,22 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+  }
+
+  &__view {
+    margin-left: 20px;
+    outline: none;
+    line-height: 0px;
+
+    &.buttons__view--active {
+      path {
+        fill: #243f4d;
+      }
+    }
+  }
+}
