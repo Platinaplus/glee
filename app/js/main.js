@@ -63,7 +63,7 @@ $(function () {
 
   });
 
-  $(".products__stars").rateYo({
+  $(".products__stars, .details__stars").rateYo({
     starWidth: "18px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
@@ -141,9 +141,48 @@ $(function () {
     anime('.products__icon--love', '.user-nav__modal', 'Added to wishlist !');
   });
 
+  // SLIDER PRODUCT DETAILS
 
+  $('.details__thumbs').slick({
+    asNavFor: '.details__big-photos',
+    focusOnSelect: true,
+    slidesToShow:3,
+    slidesToScroll:1,
+    vertical:true,
+    draggable: false
+  });
+  $('.details__big-photos').slick({
+    asNavFor: '.details__thumbs',
+    draggable: false,
+    arrows:false,
+    fade:true
+  });
 
-  
+  // FORM STYLER
+
+  $('.details__input').styler();
+
+  //SLIDER RELATED PRODUCTS
+
+  $('.related__slider').slick({
+    slidesToShow:4,
+    slidesToScroll:1,
+    appendArrows: $('.related__nav'),
+    prevArrow: '<button type="button"class="related__btn related__prev"></button>',
+    nextArrow: '<button type="button"class="related__btn related__next related__btn--active"></button>',
+  });
+
+// TABS
+
+$('.details__link').on ('click', function(e) {
+  e.preventDefault();
+  $('.details__link').removeClass('details__link--active');
+  $(this).addClass('details__link--active');
+  $('.details__review').removeClass('details__review--active');
+  $($(this).attr('href')).addClass('details__review--active');
+
+});
+
 
 
  

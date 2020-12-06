@@ -1,0 +1,28 @@
+.related{
+  padding-bottom: 54px;
+  &__wrapper{
+    @extend %flex-b;
+  }
+  &__title{
+    @extend %dm-700;
+    font-size: 36px;
+    color:#243f4d;
+    margin-bottom: 70px;
+  }
+  &__btn{
+    width: 50px;
+    height: 50px;
+    border-radius:5px;
+    margin-left: 15px;
+    border:2px solid #edf1f4;
+    &.related__btn--active{
+      border:2px solid #a3bbc8;
+    }
+  }
+  &__prev::after{
+    content:"\2190";
+  }
+  &__next::after{
+    content:"\2192";
+  }
+}
