@@ -1,5 +1,5 @@
 .news {
-  padding: 120px 0 30px;
+  padding: 120px 0;
   @extend %rubik-400;
   &__wrapper {
     display: flex;
@@ -8,6 +8,8 @@
 
   &__main {
     position: relative;
+    margin-bottom: 50px;
+
   }
 
   &__filter {
@@ -94,7 +96,7 @@
       width: 17px;
       height: 17px;
       @extend %pseudo-icon;
-      background-image: url('../images/icons/loop1.svg');
+      background-image: url('../images/icons/loop2.svg');
     }
   }
 
@@ -155,7 +157,7 @@
     @extend %rubik-700;
     font-size: 15px;
     color: #a3bbc8;
-    padding: 20px 95px 20px 15px;
+    padding: 14px 95px 14px 15px;
     border: 1px solid #a3bbc8;
     position: relative;
     &::after{
@@ -164,9 +166,14 @@
       width: 18px;
       height: 9px;
       right: 15px;
-      top: 32px;
+      top: 25px;
       position: absolute;
-      margin-left: 50px;
     }
+  }
+  .pagination{
+    margin-top: 76px;
+  }
+  .pagination__inner{
+    justify-content: flex-start;
   }
 }
