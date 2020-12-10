@@ -1,6 +1,14 @@
 //SLIDER TOP HOMEPAGE---------------------------------
 
 $(function () {
+
+//HEADER DROPDOWN MENU
+$(".menu__item--plus").on('hover', function() {
+  $('.menu__dropdown').fadeToggle(500)
+});
+
+
+
   $(".top-slider__inner").slick({
     dots: true,
     arrows: false,
@@ -116,7 +124,7 @@ $(function () {
       opacity:0
     },2000, function() {
       $(this).remove();})
-      $(modalSelector).html(text + '<span>+</span>').show(1500).hide(600)
+      $(modalSelector).html('<div>' + text + '</div>' + '<span>+</span>').show(300)
       // .animate({
       //   opacity:'1'
       // });

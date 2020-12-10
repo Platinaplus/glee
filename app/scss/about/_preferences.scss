@@ -25,26 +25,26 @@
       transform: translateX(-50%);
     }
 
-    &:nth-child(1)::before {
+    &--1::before {
       background-image: url('../images/icons/preferences/1.svg');
     }
 
-    &:nth-child(2)::before {
+    &--2::before {
       background-image: url('../images/icons/preferences/2.svg');
     }
 
-    &:nth-child(3)::before {
+    &--3::before {
       background-image: url('../images/icons/preferences/3.svg');
     }
 
-    &:nth-child(4)::before {
+    &--4::before {
       background-image: url('../images/icons/preferences/4.svg');
     }
   }
 
   &__num {
     font-size: 36px;
-    line-height: 32px;
+    line-height: 1.2;
     margin-bottom: 20px;
   }
 

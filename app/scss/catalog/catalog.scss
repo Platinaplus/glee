@@ -20,7 +20,7 @@
     max-height: 2000px;
     overflow:hidden;
     margin-bottom: 108px;
-    &.catalog__products--list{
+    &--list{
       display:block;
       margin-bottom: 148px;
     }
@@ -86,7 +86,7 @@
   &__input-hidden {
     @extend %checkbox-hidden;
 
-    &:checked+.filter__text {
+    &:checked + .filter__text {
       background-color: #edf1f4;
     }
   }
@@ -168,7 +168,7 @@
   &__input-hidden {
     @extend %checkbox-hidden;
 
-    &:checked+.filter-brand__item {
+    &:checked + .filter-brand__item {
       background-color: #edf1f4;
     }
   }

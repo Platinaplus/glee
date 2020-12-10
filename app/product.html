@@ -65,10 +65,10 @@
   <main class="main">
     <div class="title">
       <div class="title__name">Product Details</div>
-      <div class="breadcrumbs">
-        <a href="index.html" class="breadcrumbs__link">Home</a>
-        <a href="#" class="breadcrumbs__link">Product details</a>
-      </div>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Home</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Product Details</a></li>
+      </ul>
     </div>
     <section class="details">
       <div class="container-small">
@@ -138,13 +138,13 @@
           <a href="#tab-3" class="details__link">Reviews<span>(2)</span></a>
         </div>
         <div class="details__reviews">
-          <div class="details__review details__review--active" id="tab-1">
+          <p class="details__review details__review--active" id="tab-1">
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit
             amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </div>
-          <div class="details__review" id="tab-2">
+          </p>
+          <p class="details__review" id="tab-2">
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit
             amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -153,7 +153,7 @@
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit
             amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </div>
+          </p>
           <div class="details__review review" id="tab-3">
             <div class="review__item">
               <div class="review__inner">
@@ -470,18 +470,9 @@
               <div class="products__card-price"><span>$</span>29.00</div>
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
 
     <section class="blog">
       <div class="container-small">
@@ -497,8 +488,8 @@
               <div class="article__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam</div>
               <div class="article__data">
-                <div class="article__date"><time>28 january, 2020</time></div>
-                <div class="article__author">by admin</div>
+                <time class="article__date">28 january, 2020</time>
+                <span class="article__author">by admin</span>
               </div>
             </div>
           </article>
@@ -510,8 +501,8 @@
                 dolore
               </div>
               <div class="article__data">
-                <div class="article__date"><time>28 january, 2020</time></div>
-                <div class="article__author">by admin</div>
+                <time class="article__date">28 january, 2020</time>
+                <span class="article__author">by admin</span>
               </div>
             </div>
           </article>
@@ -521,8 +512,8 @@
               <a href="#" class="article__img-link"></a>
               <div class="article__text">Rncididunt ut labore et dolore magna aliqua. Ut enim</div>
               <div class="article__data">
-                <div class="article__date"><time>28 january, 2020</time></div>
-                <div class="article__author">by admin</div>
+                <time class="article__date">28 january, 2020</time>
+                <span class="article__author">by admin</span>
               </div>
             </div>
           </article>

@@ -20,7 +20,7 @@
           <ul class="menu__items">
             <li class="menu__item"><a href="index.html" class="menu__link">Home +</a></li>
             <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link">Services</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Pages +</a></li>
             <li class="menu__item"><a href="#" class="menu__link">News</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
@@ -68,10 +68,10 @@
 
       <div class="title">
         <div class="title__name">About Us</div>
-        <div class="breadcrumbs">
-          <a href="index.html" class="breadcrumbs__link">Home</a>
-          <a href="#" class="breadcrumbs__link">About Us</a>
-        </div>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Home</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">About Us</a></li>
+        </ul>
       </div>
       <div class="container-small">
         <div class="about__content">
@@ -89,16 +89,16 @@
                 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
             </div>
             <div class="about__items">
-              <div class="about__item">
-                <div class="about__num">520+</div>
+              <div class="about__item about__item--1">
+                <span class="about__num">520+</span>
                 <span class="about__num-text">Projects</span>
               </div>
-              <div class="about__item">
-                <div class="about__num">$4M</div>
+              <div class="about__item about__item--2">
+                <span class="about__num">$4M</span>
                 <span class="about__num-text">Revenue</span>
               </div>
-              <div class="about__item">
-                <div class="about__num">250</div>
+              <div class="about__item about__item--3">
+                <span class="about__num">250</span>
                 <span class="about__num-text">Awards</span>
               </div>
             </div>
@@ -110,19 +110,19 @@
     <div class="preferences">
       <div class="container-small">
         <div class="preferences__items">
-          <div class="preferences__item">
+          <div class="preferences__item preferences__item--1">
             <div class="preferences__num">99%</div>
             <span class="preferences__text">Satisfied Clients Rate</span>
           </div>
-          <div class="preferences__item">
+          <div class="preferences__item preferences__item--2">
             <div class="preferences__num">5020+</div>
             <span class="preferences__text">Products Delivered</span>
           </div>
-          <div class="preferences__item">
+          <div class="preferences__item preferences__item--3">
             <div class="preferences__num">23hr</div>
             <span class="preferences__text">Daily Working Time</span>
           </div>
-          <div class="preferences__item">
+          <div class="preferences__item preferences__item--4">
             <div class="preferences__num">140+</div>
             <span class="preferences__text">Brands in Score</span>
           </div>
@@ -133,7 +133,7 @@
     <section class="team">
       <div class="container-small">
         <div class="team__inner">
-          <aside class="team__descr">
+          <div class="team__descr">
             <div class="team__title">Our Team</div>
             <p class="team__text">
               Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusmod tempor inciLorem ipsum dolor
@@ -142,14 +142,14 @@
               consequat.
             </p>
             <a class="btn btn--radius" href="#">Join With Us</a>
-          </aside>
+          </div>
           <div class="team__photos">
             <div class="team__photo">
               <img class="team__img" src="images/team/team1.jpg" alt="photo team-member">
               <div class="team__member">
                 <div class="team__member-wrapper">
-                  <div class="team__name">Eliza Elliot</div>
-                  <div class="team__position">Commodo tempor</div>
+                  <span class="team__name">Eliza Elliot</span>
+                  <span class="team__position">Commodo tempor</span>
                 </div>
                 <div class="team__links">
                   <a href="#" class="team__link" style="background-image:url('images/icons/insta.svg')"></a>
@@ -161,8 +161,8 @@
               <img class="team__img" src="images/team/team2.jpg" alt="photo team-member">
               <div class="team__member">
                 <div class="team__member-wrapper">
-                  <div class="team__name">Roscoe A.</div>
-                  <div class="team__position">Commodo tempor</div>
+                  <span class="team__name">Roscoe A.</span>
+                  <span class="team__position">Commodo tempor</span>
                 </div>
                 <div class="team__links">
                   <a href="#" class="team__link" style="background-image:url('images/icons/insta.svg')"></a>
@@ -174,8 +174,8 @@
               <img class="team__img" src="images/team/team3.jpg" alt="photo team-member">
               <div class="team__member">
                 <div class="team__member-wrapper">
-                  <div class="team__name">Ruby M.</div>
-                  <div class="team__position">Commodo tempor</div>
+                  <span class="team__name">Ruby M.</span>
+                  <span class="team__position">Commodo tempor</span>
                 </div>
                 <div class="team__links">
                   <a href="#" class="team__link" style="background-image:url('images/icons/insta.svg')"></a>
@@ -187,8 +187,8 @@
               <img class="team__img" src="images/team/team4.jpg" alt="photo team-member">
               <div class="team__member">
                 <div class="team__member-wrapper">
-                  <div class="team__name">Marie F. Bloss</div>
-                  <div class="team__position">Commodo tempor</div>
+                  <span class="team__name">Marie F. Bloss</span>
+                  <span class="team__position">Commodo tempor</span>
                 </div>
                 <div class="team__links">
                   <a href="#" class="team__link" style="background-image:url('images/icons/insta.svg')"></a>
@@ -209,14 +209,14 @@
         </div>
         <div class="blog__items">
           <article class="article">
-            <a class="article-link" href="#"><img class="article__img" src="images/blog1.jpg" alt="interior"></a>
+            <a class="article__link" href="#"><img class="article__img" src="images/blog1.jpg" alt="interior"></a>
             <div class="article__bottom">
               <a href="#" class="article__img-link"></a>
               <div class="article__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam</div>
               <div class="article__data">
-                <div class="article__date"><time>28 january, 2020</time></div>
-                <div class="article__author">by admin</div>
+                <time class="article__date">28 january, 2020</time>
+                <span class="article__author">by admin</span>
               </div>
             </div>
           </article>
@@ -228,8 +228,8 @@
                 dolore
               </div>
               <div class="article__data">
-                <div class="article__date"><time>28 january, 2020</time></div>
-                <div class="article__author">by admin</div>
+                <time class="article__date">28 january, 2020</time>
+                <span class="article__author">by admin</span>
               </div>
             </div>
           </article>
@@ -239,8 +239,8 @@
               <a href="#" class="article__img-link"></a>
               <div class="article__text">Rncididunt ut labore et dolore magna aliqua. Ut enim</div>
               <div class="article__data">
-                <div class="article__date"><time>28 january, 2020</time></div>
-                <div class="article__author">by admin</div>
+                <time class="article__date">28 january, 2020</time>
+                <span class="article__author">by admin</span>
               </div>
             </div>
           </article>
@@ -266,7 +266,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container-small">
       <div class="footer__top">
         <div class="footer__top-block">
           <a class="logo" href="#">
@@ -285,7 +285,7 @@
           <ul class="footer__top-list">
             <li class="footer__top-item"><a href="#" class="footer__top-link">About us</a></li>
             <li class="footer__top-item"><a href="#" class="footer__top-link">Returne Policy</a></li>
-            <li class="footer__top-item"><a href="#" class="footer__top-link">Our Blog</a></li>
+            <li class="footer__top-item"><a href="blog.html" class="footer__top-link">Our Blog</a></li>
             <li class="footer__top-item"><a href="#" class="footer__top-link">Contact us</a></li>
             <li class="footer__top-item"><a href="#" class="footer__top-link">Terms & Condition</a></li>
           </ul>
@@ -301,10 +301,8 @@
         </div>
         <div class="footer__top-block  footer__top-block--letter">
           <div class="footer__top-title">newsletter</div>
-          <div class="footer__top-list">
-            <label for="subs" href="#" class="footer__top-item footer__top-link">Subscribe by newsletter and get update
-                prosition</label>
-            </div>
+            <label for="subs" href="#" class="footer__top-item footer__top-link">Subscribe by newsletter and get update prosition</label>
+
           <form class="footer__form">
             <input class="footer__input" id="subs" type="email" name="email" placeholder="Email address" required>
             <button class="footer__btn" type="submit">Subscribe</button>
@@ -316,14 +314,14 @@
         <div class="footer__copy">&copy;2020 CopyRight Example. All rights reserved.</div>
 
         <ul class="footer__items">
-          <li class="footer__item"><a href="#" class="footer__item-link">Home</a></li>
-          <li class="footer__item"><a href="#" class="footer__item-link">About</a></li>
-          <li class="footer__item"><a href="#" class="footer__item-link">Blog</a></li>
+          <li class="footer__item"><a href="index.html" class="footer__item-link">Home</a></li>
+          <li class="footer__item"><a href="about.html" class="footer__item-link">About</a></li>
+          <li class="footer__item"><a href="blog.html" class="footer__item-link">Blog</a></li>
           <li class="footer__item"><a href="#" class="footer__item-link">Contact</a></li>
         </ul>
       </div>
     </div>
-
+</footer>
 
     <!-- <script src="js/main.min.js"></script> -->
 </body>

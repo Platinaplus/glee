@@ -2,7 +2,7 @@
   padding-top: 67px;
   background-color: #fff;
 
-  &__list-inner{
+  &__list-inner {
     text-align: center;
   }
 
@@ -30,7 +30,8 @@
     grid-gap: 30px;
     margin-bottom: 184px;
   }
-  &__card-img{
+
+  &__card-img {
     object-fit: contain;
     width: 270px;
     height: 200px;
@@ -53,7 +54,7 @@
       opacity: 1;
     }
 
-    &.products__card--list {
+    &--list {
       flex-direction: row;
       box-shadow: none;
       margin-bottom: 80px;
@@ -62,11 +63,11 @@
       .products__stars {
         display: block;
       }
-    
+
       .products__buttons {
         display: block;
       }
-    
+
       .products__descr {
         display: block;
       }

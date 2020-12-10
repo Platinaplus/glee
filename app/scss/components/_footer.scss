@@ -29,11 +29,16 @@
     @extend %dm-700;
     color: $dark-blue;
     text-transform: uppercase;
+    margin-bottom: 15px;
   }
 
   &__top-item {
     font-size: 14px;
     line-height: 32px;
+  }
+
+  &__top-link{
+    cursor: pointer;
   }
 
   &__top-block--letter {
@@ -46,6 +51,10 @@
     height: 38px;
     width: 170px;
     outline-color: $light;
+    padding:0 7px;
+    background-color: $light;
+    color: $accent;
+    @extend %dm-400;
 
     &::placeholder {
       background-color: $light;

@@ -102,11 +102,13 @@
     font-size: 15px;
     outline-color: #a3bbc8;
   }
-  &__tabs{
+
+  &__tabs {
     margin-bottom: 36px;
     text-align: center;
   }
-  &__link{
+
+  &__link {
     display: inline-block;
     width: 240px;
     height: 50px;
@@ -116,17 +118,21 @@
     @extend %rubik-400;
     font-size: 18px;
     line-height: 50px;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-right: 12px;
     }
-    &.details__link--active{
+
+    &--active {
       background-color: #a3bbc8;
-      color:#fff;
+      color: #fff;
     }
   }
-  &__review{
+
+  &__review {
     display: none;
-    &.details__review--active{
+
+    &--active {
       display: block;
     }
   }
@@ -185,27 +191,27 @@
     &:after {
       display: none;
     }
-  }
 
-  &__spin.minus {
-    right: 49px;
+    &.minus {
+      right: 49px;
 
-    &:before {
-      content: "-";
-      position: absolute;
-      @extend %positionCenter;
+      &:before {
+        content: "-";
+        position: absolute;
+        @extend %positionCenter;
 
+      }
     }
-  }
 
-  &__spin.plus {
-    right: -49px;
+    &.plus {
+      right: -49px;
 
-    &:before {
-      content: "+";
-      position: absolute;
-      @extend %positionCenter;
+      &:before {
+        content: "+";
+        position: absolute;
+        @extend %positionCenter;
 
+      }
     }
   }
 }

@@ -2,8 +2,9 @@
   &__items {
     background-color: $light;
     display: flex;
-    justify-content: space-between;
-    padding: 35px 150px 35px 225px;
+    justify-content: space-around;
+    height: 170px;
+    padding: 35px 0;
   }
 
 
@@ -54,6 +55,7 @@
   }
 
   &__title {
+    display: block;
     @extend %dm-700;
     font-size: 18px;
     line-height: 40px;

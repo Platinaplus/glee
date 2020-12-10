@@ -1,10 +1,10 @@
-.article{
+.article {
 
-  
+
   &__item {
     text-align: left;
   }
-  
+
   &__img {
     height: 251px;
     width: 100%;
@@ -13,24 +13,25 @@
 
   &__img-link {
     position: relative;
-  }
 
-  &__img-link::after {
-    content: "news";
-    text-align: center;
-    display: block;
-    z-index: 4;
-    position: absolute;
-    top: -47px;
-    left: 0;
-    text-transform: uppercase;
-    width: 103px;
-    height: 30px;
-    background-color: rgb(163, 187, 200);
-    color: #fff;
-    @extend %rubik-700;
-    font-size: 14px;
-    border-radius: 20px;
+
+    &::after {
+      content: "news";
+      text-align: center;
+      display: block;
+      z-index: 4;
+      position: absolute;
+      top: -47px;
+      left: 0;
+      text-transform: uppercase;
+      width: 103px;
+      height: 30px;
+      background-color: rgb(163, 187, 200);
+      color: #fff;
+      @extend %rubik-700;
+      font-size: 14px;
+      border-radius: 20px;
+    }
   }
 
   &__bottom {
@@ -53,10 +54,12 @@
     margin-bottom: 17px;
     text-align: left;
     overflow-y: hidden;
+    min-height: 60px;
   }
 
   &__data {
-    @extend %flex-a;
+    display: flex;
+    align-items: center;
     height: 60px;
     align-items: center;
     text-transform: uppercase;
@@ -65,12 +68,15 @@
     line-height: 30px;
     color: #262626;
     border-top: 1px solid #e0e0e0;
+  }
 
+  &__date {
+    margin-right: 25px;
+  }
 
-    }
-    &__date::before,
-    &__author::before {
-      content: "\2610";
-      margin-right: 7px;
-    }
+  &__date::before,
+  &__author::before {
+    content: "\2610";
+    margin-right: 7px;
+  }
 }
