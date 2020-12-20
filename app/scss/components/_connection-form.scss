@@ -5,6 +5,7 @@
 
   &__inner {
     @extend %flex-b;
+    align-items:flex-start;
     width: 100%;
   }
 
