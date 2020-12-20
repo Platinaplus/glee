@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -18,11 +17,27 @@
         </a>
         <nav class="menu">
           <ul class="menu__items">
-            <li class="menu__item"><a href="#" class="menu__link">Home +</a></li>
+            <li class="menu__item menu__item--plus">
+              <a href="#" class="menu__link menu__link--plus">Home +</a>
+              <ul class="menu__dropdown">
+                <li><a class=menu__dropdown-link href="#">home-item-1</a></li>
+                <li><a class=menu__dropdown-link href="#">home-item-2</a></li>
+                <li><a class=menu__dropdown-link href="#">home-item-3</a></li>
+                <li><a class=menu__dropdown-link href="#">home-item-4</a></li>
+              </ul>
+            </li>
             <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Pages +</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">News</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link">Services</a></li>
+            <li class="menu__item menu__item--plus">
+              <a href="#" class="menu__link">Pages +</a>
+              <ul class="menu__dropdown">
+                <li><a class=menu__dropdown-link href="#">pages-item-1</a></li>
+                <li><a class=menu__dropdown-link href="#">pages-item-2</a></li>
+                <li><a class=menu__dropdown-link href="#">pages-item-3</a></li>
+                <li><a class=menu__dropdown-link href="#">pages-item-4</a></li>
+              </ul>
+            </li>
+            <li class="menu__item"><a href="blog.html" class="menu__link">News</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
           </ul>
         </nav>
@@ -54,13 +69,15 @@
                 d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
                 transform="translate(-1811 -63.594)" />
             </svg>
+
           </a>
+
         </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <div class="title__title">
+    <div class="title">
       <div class="title__name">Terms & Conditions</div>
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Home</a></li>
@@ -175,15 +192,16 @@
       </div>
     </section>
   </main>
+
   <footer class="footer">
-    <div class="container">
+    <div class="container-small">
       <div class="footer__top">
         <div class="footer__top-block">
           <a class="logo" href="#">
             <img class="logo__img" src="images/logotip.png" alt="logo">
           </a>
           <address class="footer__top-address">
-            <p class="footer__top-text">ADDRESS: 4772 Wines Lane <span>Houston, TX 77032</span></p>
+            <p class="footer__top-text">ADDRESS: 4772 Wines Lane Houston, TX 77032</p>
             <a class="footer__address-link" href="tel:+8323475843">TELEPHONE:
               +832-347-5843</a>
             <a class="footer__address-link" href="mailto:contact@Glee.com">EMAIL:
@@ -193,11 +211,12 @@
         <div class="footer__top-block">
           <div class="footer__top-title">services</div>
           <ul class="footer__top-list">
-            <li class="footer__top-item"><a href="#" class="footer__top-link">About us</a></li>
+            <li class="footer__top-item"><a href="about.html" class="footer__top-link">About us</a></li>
             <li class="footer__top-item"><a href="#" class="footer__top-link">Returne Policy</a></li>
-            <li class="footer__top-item"><a href="#" class="footer__top-link">Our Blog</a></li>
+            <li class="footer__top-item"><a href="blog.html" class="footer__top-link">Our Blog</a></li>
             <li class="footer__top-item"><a href="#" class="footer__top-link">Contact us</a></li>
-            <li class="footer__top-item"><a href="#" class="footer__top-link">Terms & Condition</a></li>
+            <li class="footer__top-item"><a href="terms&conditions.html" class="footer__top-link">Terms & Condition</a>
+            </li>
           </ul>
         </div>
         <div class="footer__top-block">
@@ -205,7 +224,7 @@
           <ul class="footer__top-list">
             <li class="footer__top-item"><a href="#" class="footer__top-link">Your Account</a></li>
             <li class="footer__top-item"><a href="#" class="footer__top-link">Checkout</a></li>
-            <li class="footer__top-item"><a href="#" class="footer__top-link">Login</a></li>
+            <li class="footer__top-item"><a href="login.html" class="footer__top-link">Login</a></li>
             <li class="footer__top-item"><a href="#" class="footer__top-link">Register</a></li>
           </ul>
         </div>
@@ -224,17 +243,17 @@
 
       <div class="footer__bottom">
         <div class="footer__copy">&copy;2020 CopyRight Example. All rights reserved.</div>
+
         <ul class="footer__items">
-          <li class="footer__item"><a href="#" class="footer__item-link">Home</a></li>
-          <li class="footer__item"><a href="#" class="footer__item-link">About</a></li>
-          <li class="footer__item"><a href="#" class="footer__item-link">Blog</a></li>
-          <li class="footer__item"><a href="#" class="footer__item-link">Contact</a></li>
+          <li class="footer__item"><a href="index.html" class="footer__item-link">Home</a></li>
+          <li class="footer__item"><a href="about.html" class="footer__item-link">About</a></li>
+          <li class="footer__item"><a href="blog.html" class="footer__item-link">Blog</a></li>
+          <li class="footer__item"><a href="login.html" class="footer__item-link">Contact</a></li>
         </ul>
       </div>
     </div>
-    </div>
-
-    <!-- <script src="js/main.min.js"></script> -->
+  </footer>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

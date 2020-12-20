@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 0 176px;
-
+    overflow: hidden;
     &::before {
       content: "";
       display: block;
@@ -18,33 +18,75 @@
       left: 57%;
       top: 50%;
       transform: translateY(-50%);
+      @media (max-width: 1024px){
+        width: 500px;
+        height: 500px;
+        left: 50%;
+        top: 56%;
+      }
+      @media (max-width: 768px){
+        display: none;
+      }
+    }
+    @media (max-width: 1024px){
+      height: 500px;
+      padding: 0 30px;
+    }
+    @media (max-width: 768px){
+      height: 400px;
+    }
+    @media (max-width: 425px){
+      height: 200px;
+      padding: 0 10px;
+      max-width: 395px;
     }
   }
-
 
 
   &__item {
     display: flex !important;
     position: relative;
     justify-content: space-around;
+    @media (max-width: 1024px){
+      justify-content: center;
+    }
   }
 
   &__img {
     z-index: 2;
     object-fit: contain;
+    @media (max-width: 768px){
+      max-width: 50%;
+      max-height: 300px;
+    }
+    @media (max-width: 425px){
+      max-height: 100px;
+      max-width: 30%;
+    }
   }
 
   &__content {
     align-self: flex-start;
-    max-width: 29%;
     text-align: left;
+    @media (max-width: 1024px){
+      margin-right: 30px;
+      max-width: 50%;
+    }
   }
 
   &__title {
     @extend %rubik-500;
     font-size: 72px;
-    line-height: 70px;
+    line-height: 1.2;
     text-transform: uppercase;
+    max-width:500px;
+    @media (max-width: 1024px){
+      font-size: 40px;
+      line-height: 1.2;
+    }
+    @media (max-width: 425px){
+      font-size: 18px;
+    }
   }
 
   &__text {
@@ -54,6 +96,11 @@
     font-size: 18px;
     line-height: 30px;
     color: $accent;
+    @media (max-width: 425px){
+      font-size: 10px;
+      padding: 10px 0;
+      line-height: 1.1;
+    }
   }
 
   .slick-dots {
@@ -63,6 +110,9 @@
     bottom: 44px;
     left: 50%;
     transform: translateX(-50%);
+    @media (max-width: 425px){
+      bottom: 5px;
+    }
 
     li {
       padding: 6px;
@@ -76,6 +126,11 @@
         height: 30px;
         border-radius: 50%;
         outline: none;
+        @media (max-width: 425px){
+          width: 15px;
+          height: 15px;
+          font-size: 9px;
+        }
       }
 
       &.slick-active {

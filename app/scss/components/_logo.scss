@@ -1,14 +1,10 @@
 .logo {
-  @extend %rubik-500;
-  font-size: 36px;
-
   &__img {
-    display: inline;
+    display: inline-block;
     vertical-align: middle;
-  }
+    @media (max-width: 425px){
+      max-width: 80px;
 
-  &__name {
-    line-height: 47px;
-    vertical-align: bottom;
+    }
   }
 }

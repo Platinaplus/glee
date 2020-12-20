@@ -52,5 +52,12 @@
       display: none;
     }
   }
+  @media (max-width: 425px){
+    font-size: 12px;
+    padding: 10px;
+    &::after{
+      display: none;
+    }
+  }
 }
 

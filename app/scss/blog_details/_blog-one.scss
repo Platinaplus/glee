@@ -1,0 +1,136 @@
+.blog-one {
+  @extend %rubik-400;
+  font-size: 16px;
+
+  &__main {
+    max-width: 830px;
+    margin-bottom: 0;
+  }
+
+  &__info {
+    display: block;
+  }
+
+  h2 {
+    display: block;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  h6 {
+    @extend %rubik-500;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    max-width: 830px;
+    color: #243f4d;
+    margin-bottom: 40px;
+  }
+
+  blockquote {
+    color: #243f4d;
+    background-color: #edf1f4;
+    padding: 23px 108px 23px 30px;
+    border-left: 6px solid #a3bbc8;
+    margin-bottom: 46px;
+
+    span {
+      display: block;
+      padding-left: 40px;
+      position: relative;
+      margin-top: 20px;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        top: 15px;
+        background-color: #a3bbc8;
+      }
+    }
+  }
+
+  h5 {
+    @extend %rubik-500;
+    font-size: 18px;
+  }
+
+  &__img-left,
+  &__img-right {
+    width: 320px;
+    height: 209px;
+    object-fit: cover;
+    margin: 0 30px 40px 0;
+  }
+
+  &__img-left {
+    float: left;
+  }
+
+  &__img-right {
+    float: right;
+  }
+
+  &__author {
+    @extend %flex-b;
+    padding: 25px 20px 25px 0;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 60px;
+  }
+
+  &__author-data {
+    display: flex;
+  }
+
+  &__author-photo {
+    width: 77px;
+    height: 77px;
+    object-fit: cover;
+    margin-right: 25px;
+  }
+
+  &__author-name {
+    display: block;
+    @extend %rubik-500;
+    font-size: 18px;
+    color: #333;
+  }
+
+  &__author-position {
+    display: block;
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #858585;
+  }
+
+  &__share-icon {
+    margin-left: 20px;
+    transition: .3s;
+
+    &:hover {
+      path {
+        fill: #333;
+      }
+    }
+  }
+
+  &__tags {
+    span {
+      margin-right: 20px;
+    }
+
+    a {
+      color: #999999;
+      transition: .3s;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+}

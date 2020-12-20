@@ -2,9 +2,35 @@
 
 $(function () {
 
+  let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 29.864604567332368, lng: -95.40770262397278 },
+    zoom: 8,
+  });
+}
+
+//HEADER ADAPTIVE MAIN MENU
+
+$('.user-nav__layout--3').on('click', function() {
+  $('.menu').toggleClass('show')
+});
+
+
 //HEADER DROPDOWN MENU
-$(".menu__item--plus").on('hover', function() {
-  $('.menu__dropdown').fadeToggle(500)
+
+
+let timer;
+
+$(".menu__item--plus, .menu__dropdown").hover( function() {
+  clearTimeout(timer);
+  $(this).addClass( "drop" );
+}, function(){
+  timer = setTimeout(function() {
+    $('.menu__item--plus').removeClass( "drop" );
+  }, 500)
+  
 });
 
 

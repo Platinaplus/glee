@@ -1,10 +1,23 @@
 .new-design {
   padding: 105px 0 120px;
 
-  &__title{
-    @extend %title;
+  @media (max-width: 768px) {
+    padding: 57px 0 0;
   }
-  
+
+  @media (max-width: 425px) {
+    padding-top: 15px;
+  }
+
+  &__title {
+    @extend %title;
+
+    @media (max-width: 425px) {
+      font-size: 20px;
+      margin: 0 0 7px;
+    }
+  }
+
   &__menu-item:hover,
   &__menu-item.on {
     color: #191919;
@@ -15,9 +28,17 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    height: 526px;
     width: 100%;
     margin-top: 77px;
+
+    @media (max-width: 768px) {
+      margin: 30px 0 50px;
+      grid-gap: 20px;
+    }
+
+    @media (max-width: 425px) {
+      display: block;
+    }
   }
 
   &__card {
@@ -26,6 +47,19 @@
     padding: 40px 0 0 35px;
     height: 248px;
     border-radius: 5px;
+
+    @media (max-width: 768px) {
+      padding: 15px 0 0 15px;
+    }
+
+    @media (max-width: 425px) {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &__card-link {
+    display: block;
   }
 
   &__name {
@@ -41,7 +75,8 @@
     color: #a3bbc8;
     margin-top: 19px;
   }
-  &__menu-item:not(:last-child){
+
+  &__menu-item:not(:last-child) {
     margin-right: 30px;
   }
 }
