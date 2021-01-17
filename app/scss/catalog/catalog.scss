@@ -1,5 +1,8 @@
 .catalog {
   padding: 120px 0 120px;
+  @media (max-width:768px) {
+    padding: 60px 0;
+  }
 
   &__inner {
     display:flex;
@@ -7,6 +10,9 @@
 
     &__filters {
       width: 270px;
+    }
+    @media (max-width:768px) {
+      display: block;
     }
   }
 
@@ -17,8 +23,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 40px;
     grid-column-gap: 30px;
-    max-height: 2000px;
-    overflow:hidden;
     margin-bottom: 108px;
     &--list{
       display:block;
@@ -101,10 +105,19 @@
       content: "$"
     }
   }
+  &__wrapper{
+    @media (max-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .filter-price {
   margin-bottom: 80px;
+  @media (max-width:768px) {
+    width: 50%;
+  }
 }
 
 .irs--flat .irs-line {
@@ -171,6 +184,9 @@
     &:checked + .filter-brand__item {
       background-color: #edf1f4;
     }
+  }
+  @media (max-width:768px) {
+    width: 50%;
   }
 }
 

@@ -9,6 +9,12 @@
     height: 251px;
     width: 100%;
     object-fit: cover;
+    @media (max-width:768px){
+      height: auto;
+      width: auto;
+      margin-right: 0;
+    }
+
   }
 
   &__img-link {
@@ -31,6 +37,13 @@
       @extend %rubik-700;
       font-size: 14px;
       border-radius: 20px;
+    @media (max-width:768px){
+      left: 177px;
+    }
+    @media (max-width:768px){
+      left: 0;
+    }
+
     }
   }
 
@@ -55,6 +68,9 @@
     text-align: left;
     overflow-y: hidden;
     min-height: 60px;
+    @media (max-width:768px){
+      font-size: 14px;
+    }
   }
 
   &__data {

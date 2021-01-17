@@ -4,6 +4,14 @@
     padding-top: 120px;
     @extend %flex-b;
     color: #243f4d;
+
+    @media (max-width: 768px) {
+      padding-top: 80px;
+    }
+
+    @media (max-width: 425px) {
+      padding-top: 50px;
+    }
   }
 
   &__image {
@@ -11,12 +19,25 @@
     width: 100%;
     object-fit: cover;
     overflow: hidden;
+
+    @media (max-width: 1024px) {
+      width: auto;
+      max-width: 486px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
-  &__info{
+  &__info {
     padding-left: 45px;
     max-width: 555px;
     width: 100%;
+
+    @media (max-width: 425px) {
+      padding-left: 0;
+    }
   }
 
   &__numbers {
@@ -32,6 +53,15 @@
       position: absolute;
       left: 0;
       top: 20px;
+
+      @media (max-width: 425px) {
+        font-size: 120px;
+        top: 26px;
+      }
+    }
+
+    @media (max-width: 425px) {
+      padding-left: 165px;
     }
   }
 
@@ -46,6 +76,11 @@
     line-height: 1.2;
     @extend %dm-700;
     margin-bottom: 45px;
+
+    @media (max-width: 425px) {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
   }
 
   &__text {
@@ -63,6 +98,10 @@
       position: absolute;
       bottom: 0;
       left: 0;
+
+      @media (max-width: 425px) {
+        width: 100%;
+      }
     }
   }
 
@@ -70,6 +109,10 @@
     padding-top: 42px;
     @extend %flex-b;
     @extend %dm-700;
+
+    @media (max-width: 425px) {
+      display: block;
+    }
   }
 
   &__num {
@@ -77,6 +120,10 @@
     font-size: 36px;
     line-height: 38px;
     margin-bottom: 10px;
+
+    @media (max-width: 425px) {
+      font-size: 20px;
+    }
   }
 
   &__num-text {
@@ -95,6 +142,11 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
+      @media (max-width: 425px) {
+        top: 0;
+        left: 50%;
+        transform: translatex(-50%);
+      }
     }
 
     &--1::before {
@@ -113,6 +165,14 @@
       width: 40px;
       height: 40px;
       background-image: url('../images/icons/medal.svg');
+    }
+
+    @media (max-width: 425px) {
+      padding-top: 50px;
+      position: relative;
+      text-align: center;
+      padding-left: 0;
+      margin-bottom: 30px;
     }
   }
 }

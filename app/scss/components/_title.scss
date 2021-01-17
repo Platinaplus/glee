@@ -1,5 +1,8 @@
 .about {
   padding-bottom: 120px;
+  @media (max-width: 768px) {
+    padding-bottom: 30px;
+  }
 }
 
 .title {
@@ -8,7 +11,10 @@
     height: 124px;
     @extend %flex-c;
     flex-direction: column;
-  
+    @media  (max-width:425px){
+      height: 70px;
+      padding: 17px 0;
+    }
 
   &__name {
     color: #222933;
@@ -16,6 +22,10 @@
     font-size: 36px;
     line-height: 24px;
     margin-bottom: 12px;
+    @media  (max-width:425px){
+      font-size: 20px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -27,6 +37,9 @@
     font-size: 14px;
     line-height: 24px;
     color: #222933;
+    @media  (max-width:425px){
+      font-size: 11px;
+    }
     &::after {
       content: "/";
       display: inline-block;

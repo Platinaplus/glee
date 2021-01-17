@@ -1,10 +1,16 @@
 .contact{
   padding: 110px 0 63px;
+  @media (max-width: 768px) {
+    padding: 50px 0 30px;
+  }
   &__subtitle{
     display: block;
     text-align: center;
     color: #a3bbc8;
     margin-bottom: 15px;
+    @media (max-width: 425px) {
+      margin-bottom: 0;
+    }
   }
   &__title{
     color: #436372;
@@ -13,11 +19,18 @@
     font-size: 35px;
     line-height: 1.2;
     margin-bottom: 70px;
+    @media (max-width: 425px) {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
   }
   &__items{
     display: flex;
     column-gap: 30px;
     margin-bottom: 120px;
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
   &__item{
     width: 30%;
@@ -36,6 +49,11 @@
           fill: #fff;
         }
       }
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 30px 0;
+      height: auto;
     }
   }
   &__img{
@@ -62,6 +80,9 @@
   }
   &__map{
     display: flex;
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
   .connection{
     margin-right: 50px;
@@ -69,13 +90,39 @@
     &__email,
     &__name {
       background-position: 236px 20px;
+      @media (max-width: 768px) {
+        background-position: 315px 20px;
+      }
+      @media (max-width: 425px) {
+        background-position: 262px 20px;
+      }
     }
     &__text{
       background-position: 545px 20px;
+      @media (max-width: 768px) {
+        background-position: 700px 20px;
+      }
+      @media (max-width: 425px) {
+        background-position: 262px 20px;
+      }
+    }
+    @media (max-width: 768px) {
+      margin-right: 0;
+      max-width: 100%;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
     }
   }
 }
 #map {
   width: 500px;
   height: 334px;
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+  
 }

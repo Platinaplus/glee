@@ -7,6 +7,11 @@
     @extend %dm-700;
     padding: 0 40px;
     color: #243f4d;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      column-gap: 30px;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -40,16 +45,28 @@
     &--4::before {
       background-image: url('../images/icons/preferences/4.svg');
     }
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__num {
     font-size: 36px;
     line-height: 1.2;
     margin-bottom: 20px;
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+    @media (max-width: 425px) {
+      margin-bottom: 0;
+    }
   }
 
   &__text {
     font-size: 18px;
     line-height: 32px;
+  }
+  @media (max-width: 768px) {
+    padding: 30px 0;
   }
 }

@@ -7,22 +7,47 @@
     @extend %flex-b;
     align-items: baseline;
     text-align: left;
+
+    @media (max-width:768px) {
+      padding: 30px 0 30px;
+    }
+
+    @media (max-width:425px) {
+      display: block;
+      padding-left: 30px;
+    }
   }
 
   &__top-block {
     max-width: 200px;
+
+    @media (max-width:425px) {
+      margin-bottom: 15px;
+
+      .logo__img {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   &__top-address {
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
+
+    @media (max-width:768px) {
+      font-size: 12px;
+    }
   }
 
   &__top-text,
   &__address-link {
     display: block;
     margin-top: 24px;
+
+    @media (max-width:425px) {
+      margin-top: 0;
+    }
   }
 
   &__top-title {
@@ -30,15 +55,29 @@
     color: $dark-blue;
     text-transform: uppercase;
     margin-bottom: 15px;
+
+    @media (max-width:768px) {
+      font-size: 14px;
+    }
+
+    @media (max-width:425px) {
+      margin-bottom: 0;
+      font-size: 12px;
+    }
   }
 
   &__top-item {
     font-size: 14px;
     line-height: 32px;
+
+    @media (max-width:768px) {
+      font-size: 12px;
+    }
   }
 
-  &__top-link{
+  &__top-link {
     cursor: pointer;
+
   }
 
   &__top-block--letter {
@@ -51,10 +90,15 @@
     height: 38px;
     width: 170px;
     outline-color: $light;
-    padding:0 7px;
+    padding: 0 7px;
     background-color: $light;
     color: $accent;
     @extend %dm-400;
+
+    @media (max-width:425px) {
+      width: 50%;
+    }
+
 
     &::placeholder {
       background-color: $light;
@@ -80,12 +124,20 @@
 
   &__bottom {
     @extend %flex-b;
-
     font-size: 14px;
     line-height: 32px;
     color: $text-color;
     border-top: 1px solid $light-blue;
     padding: 31px 0;
+
+    @media (max-width:768px) {
+      font-size: 11px;
+    }
+
+    @media (max-width:425px) {
+      padding: 15px 0;
+      display: block;
+    }
   }
 
   &__items {
@@ -94,9 +146,11 @@
 
   &__item {
     position: relative;
-    & + &{
+
+    &+& {
       margin-left: 30px;
     }
+
     &:not(:first-child)::before {
       content: "";
       display: block;
@@ -109,6 +163,4 @@
       left: -15px;
     }
   }
-
-
 }

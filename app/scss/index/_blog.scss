@@ -1,5 +1,9 @@
 .blog {
   padding-top: 57px;
+  @media (max-width:768px){
+    padding-top: 0;
+  }
+
 
   &__top {
     @extend %flex-b;
@@ -8,6 +12,13 @@
   &__title {
     @extend %title;
     margin-bottom: 47px;
+    @media (max-width:768px){
+      font-size: 23px;
+    }
+    @media (max-width:768px){
+      font-size: 16px;
+    }
+
   }
 
   &__link {
@@ -16,6 +27,9 @@
     font-size: 16px;
     color: #191919;
     padding-right: 23px;
+    @media (max-width:768px){
+      font-size: 12px;
+    }
 
     &::after {
       width: 7px;
@@ -32,6 +46,9 @@
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width:768px){
+      display: block;
+    }
   }
 }
 
