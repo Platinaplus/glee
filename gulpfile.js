@@ -8,6 +8,7 @@ const imagemin = require("gulp-imagemin");
 const del = require("del");
 // const fileinclude = require('gulp-file-include');
 const rename = require('gulp-rename');
+const Swal = require('sweetalert2');
 
 function browsersync() {
   browserSync.init({
@@ -53,6 +54,7 @@ function scripts() {
   "node_modules/ion-rangeslider/js/ion.rangeSlider.js",
   "node_modules/rateyo/src/jquery.rateyo.js",
   "node_modules/jquery-form-styler/dist/jquery.formstyler.js",
+  "node_modules/sweetalert2/dist/sweetalert2.min.js",
   "app/js/main.js"
 ])
     .pipe(concat("main.min.js"))

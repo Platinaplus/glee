@@ -82,6 +82,10 @@
       justify-content: flex-start;
     }
 
+    @media (max-width:425px) {
+      display: block;
+    }
+
     &:hover>.products__icons {
       opacity: 1;
     }

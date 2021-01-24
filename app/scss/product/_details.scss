@@ -1,25 +1,47 @@
 .details {
   padding: 120px 0 111px;
+  @media (max-width:768px) {
+    padding: 50px 0;
+  }
+  @media (max-width:425px) {
+    padding: 30px 0;
+  }
 
   &__wrapper {
     display: flex;
     margin-bottom: 100px;
+    @media (max-width:768px) {
+      display: block;
+      margin-bottom: 50px;
+    }
   }
 
   &__photos {
     width: 550px;
     margin-right: 72px;
     display: flex;
+    @media (max-width:425px) {
+      width: 100%;
+      margin-right: 0;
+      display: block;
+    }
+    
   }
 
   &__content {
     width: 530px;
     padding-top: 25px;
+    @media (max-width:425px) {
+      width: auto;
+    }
   }
 
   &__thumbs {
     width: 140px;
     margin-right: 26px;
+    @media (max-width:425px) {
+      display: none;
+    }
 
   }
 
@@ -40,12 +62,19 @@
 
   &__big-photos {
     width: 384px;
+    @media (max-width:425px) {
+      width: 100%;
+    }
   }
 
   &__big-photo {
     width: 384px;
     height: 530px;
     border: 2px solid #f2f2f2;
+    @media (max-width:425px) {
+      width: auto;
+      height: auto;
+    }
 
   }
 
@@ -54,6 +83,11 @@
     height: 528px;
     padding: 15px 0;
     object-fit: contain;
+    @media (max-width:425px) {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+    }
 
   }
 
@@ -62,10 +96,17 @@
     font-size: 40px;
     color: #333333;
     margin-bottom: 24px;
+    @media (max-width:425px) {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
   }
 
   &__stars {
     margin-bottom: 37px;
+    @media (max-width:425px) {
+      margin-bottom: 10px;
+    }
 
   }
 
@@ -75,6 +116,9 @@
     line-height: 43px;
     color: #333333;
     margin-bottom: 40px;
+    @media (max-width:425px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__descr {
@@ -88,6 +132,9 @@
   &__form {
     margin-bottom: 50px;
     margin-left: 49px;
+    @media (max-width:425px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__btn {
@@ -101,11 +148,22 @@
     @extend %rubik-400;
     font-size: 15px;
     outline-color: #a3bbc8;
+    @media (max-width:1024px) {
+      margin-left: 60px;
+      width: 150px;
+    }
+    @media (max-width:425px) {
+      display: block;
+      margin: 10px 0 0 -50px;
+    }
   }
 
   &__tabs {
     margin-bottom: 36px;
     text-align: center;
+    @media (max-width:425px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__link {
@@ -121,11 +179,22 @@
 
     &:not(:last-child) {
       margin-right: 12px;
+      @media (max-width:425px) {
+        margin-right: 0;
+      }
     }
 
     &--active {
       background-color: #a3bbc8;
       color: #fff;
+    }
+    @media (max-width:768px) {
+      width: 180px;
+      font-size: 14px;
+    }
+    @media (max-width:425px) {
+      margin: 0 0 5px 0;
+      width: 100%;
     }
   }
 
@@ -134,6 +203,9 @@
 
     &--active {
       display: block;
+      @media (max-width:425px) {
+        font-size: 14px;
+      }
     }
   }
 }

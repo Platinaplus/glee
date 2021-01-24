@@ -136,43 +136,34 @@ $(".menu__item--plus, .menu__dropdown").hover( function() {
     $(selector).attr('data-value', value).text(value)
   };
 
-  const anime = function(selector, modalSelector, text) {
-    $(selector)
-    .clone()
-    .css({
-      'position': 'absolute',
-      'z-index': '999'
-    })
-    .appendTo($(selector).parent())
-    .animate({
-      top: '-500px',
-      left: '500px',
-      opacity:0
-    },2000, function() {
-      $(this).remove();})
-      $(modalSelector).html('<div>' + text + '</div>' + '<span>+</span>').show(300)
-      // .animate({
-      //   opacity:'1'
-      // });
-      $(modalSelector +' span').on('click', function () {
-        $(modalSelector).hide(300);
-      });
-      // setInterval(function() {
-      //   $(modalSelector).hide()
-      // }, 3500);
-    
-  };
-
   $('.products__button--cart, .products__icon--cart').on('click', function (e) {
     e.preventDefault();
     addTo('.user-nav__num--cart');
-    anime('.products__icon--cart', '.user-nav__modal', 'Added to cart !');
+    Swal.fire(
+      '',
+      'Added to cart!',
+      'success'
+    )
   });
 
   $('.products__button--love, .products__icon--love').on('click', function (e) {
     e.preventDefault();
     addTo('.user-nav__num--love');
-    anime('.products__icon--love', '.user-nav__modal', 'Added to wishlist !');
+    Swal.fire(
+      '',
+      'Added to wishlist!',
+      'success'
+    )
+  });
+
+  // SWEETALERTS
+
+  $('.user-nav__layout--3').on('click', function () {
+    Swal.fire(
+      'This is demo',
+      'The options button!',
+      'success'
+    )
   });
 
   // SLIDER PRODUCT DETAILS
@@ -183,13 +174,21 @@ $(".menu__item--plus, .menu__dropdown").hover( function() {
     slidesToShow:3,
     slidesToScroll:1,
     vertical:true,
-    draggable: false
+    draggable: false,
+
   });
   $('.details__big-photos').slick({
     asNavFor: '.details__thumbs',
     draggable: false,
     arrows:false,
-    fade:true
+    fade:true,
+    responsive: [
+      {
+        breakpoint: 426,
+        settings: {
+          draggable: true
+        }
+      }]
   });
 
   // FORM STYLER
@@ -204,6 +203,14 @@ $(".menu__item--plus, .menu__dropdown").hover( function() {
     appendArrows: $('.related__nav'),
     prevArrow: '<button type="button"class="related__btn related__prev"></button>',
     nextArrow: '<button type="button"class="related__btn related__next related__btn--active"></button>',
+    responsive: [
+      {
+        breakpoint: 426,
+        settings: {
+          slidesToShow:2,
+          slidesToScroll:1
+        }
+      }]
   });
 
 // TABS

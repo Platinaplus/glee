@@ -1,14 +1,24 @@
 .terms{
   color: $accent;
   padding: 108px 0 51px;
+  @media (max-width:425px) {
+    padding: 30px 0 30px;
+  }
   &__title{
     @extend %rubik-500;
     font-size: 24px;
     line-height: 40px;
     margin-bottom: 23px;
+    @media (max-width:425px) {
+      font-size: 21px;
+      margin-bottom: 0;
+    }
   }
   &__title--main{
     margin-bottom: 30px;
+    @media (max-width:425px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__list{
@@ -26,10 +36,17 @@
       counter-increment: num;
       margin-right: 9px;
     }
+    @media (max-width:425px) {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
   }
 
   &__wrapper{
     margin-bottom: 68px;
+    @media (max-width:425px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__item--text{
@@ -39,6 +56,9 @@
     }
     &:last-child{
       margin-bottom: 0;
+    }
+    @media (max-width:425px) {
+      margin-bottom: 10px;
     }
   }
 }

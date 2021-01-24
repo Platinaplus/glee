@@ -27,7 +27,8 @@
     "swiper": "^6.3.5"
   },
   "dependencies": {
-    "ion-rangeslider": "^2.3.1"
+    "ion-rangeslider": "^2.3.1",
+    "sweetalert2": "^10.13.0"
   },
   "repository": {
     "type": "git",
