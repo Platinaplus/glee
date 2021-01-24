@@ -43,6 +43,17 @@ $(".menu__item--plus, .menu__dropdown").hover( function() {
     autoplaySpead: 3000,
   });
 
+  //SEARCH-----------------------------------
+  let flag = false;
+  $(".user-nav__layout--1").on('click', function() {
+    flag = !flag;
+    if (flag){
+      $('.user-nav__layout-search').addClass('search-show')
+    } else {
+      $('.user-nav__layout-search').removeClass('search-show')
+    }
+  });
+
   //FILTER PRODUCTS HOMEPAGE----------------------------
 
   if ($(".new-design__cards").length) {
