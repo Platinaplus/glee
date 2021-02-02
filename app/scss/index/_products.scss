@@ -89,7 +89,9 @@
     &:hover>.products__icons {
       opacity: 1;
     }
-
+    &.products__card--love{
+      border: 1px solid #108a2e
+    }
 
     &--list {
       flex-direction: row;
